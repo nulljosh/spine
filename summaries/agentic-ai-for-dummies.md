@@ -1,8 +1,5 @@
 # Agentic AI for dummies
 
-
----
-
 # Chapter 13: Scoping the Future of Agency (pp. 285–300)
 
 ## In This Chapter
@@ -260,6 +257,3 @@ Agentic AI is more than a tech trend; these systems are forging a massive transf
 - The future of Agentic AI is shaped by human choices, not predetermined fate — it could trend utopian, dystopian, or (most likely) a mixed "middle road," depending on governance, value alignment, and how transition costs (e.g., job displacement) are managed.
 - Agentic AI offers tangible near-term lifestyle benefits (errand automation, finance management, personalized learning, shopping, travel planning) but has persistent weaknesses: emotional nuance, ethical judgment, novel/unstructured problems, creative vision, big-picture/systemic reasoning, crisis response, competing-preference balancing, trust-building, privacy respect, and admitting uncertainty.
 - Bold predictions for the next decade include agents replacing apps as the primary digital interface, "A-commerce" overtaking e-commerce, AI agent optimization replacing SEO, new legal/insurance frameworks for agents, mainstream personalized AI education, digital labor markets for agents, AI-driven preventive healthcare, and AI-enabled social/labor organizing.
-
----
-
