@@ -1,5 +1,288 @@
 # Agentic AI for dummies
 
+# Chapter 12: Upskilling for the Agentic Age
+
+*(Part 4: Exploring Myths and Realities, pp. 265–283)*
+
+## In This Chapter
+- Finding out what to learn and what to let go
+- Checking out human roles in an Agentic AI-augmented workplace
+- Committing to adapting in the job market that includes AI
+- Recognizing the significance of human thinking
+
+## Introduction
+
+Succeeding in the Agentic AI era requires more than gaining proficiency with the latest AI tools. It means changing how you think about work and using your job skills. The implications cut across every job category.
+
+---
+
+## Knowing What to Learn and Unlearn
+
+GenAI's rise means the skills needed to work successfully with AI models (like ChatGPT) are still relevant, but you also need to learn additional, entirely different skills to work with **agents**.
+
+### Becoming an AI agent manager
+
+The most essential skill to develop is the ability to manage AI agents as if they were assistants, rather than dumb tools. Core skills for this management role include prompt engineering and context engineering, and workers across all fields need to learn how to effectively communicate with and direct AI systems, by understanding how to structure requests, provide context, and iterate on AI outputs.
+
+Examples of AI agent management:
+- **Customer service professionals**, for example, may no longer spend most of the day manually closing tickets. Instead, they'll configure, monitor, and manage AI agents that automatically resolve the majority of customer service issues. The human customer service pro will step in only when a situation calls for empathy, creative problem-solving, or human judgment.
+- **Project managers** will likely need to direct swarms of agents, compile reports, and track dependencies in real time. And they do this while directing oversight of the project to ensure that these autonomous systems stay aligned with organizational goals.
+
+It may seem as if everyone just got promoted to management. But they're managing AI agents instead of people. Of course, some roles will require that you manage people and AI agents. But almost everyone will need the skills necessary to keep at least one AI agent on target.
+
+Thriving in the Agentic AI age means becoming an orchestrator, curator, and strategist at work. The most successful professionals will be those who can blend technical literacy with creativity, ethics, and systems-level thinking (focusing on the big picture of the world around you instead of being a task executor), in which you'll need to evolve from a task executor to a conductor of a symphony of intelligent agents.
+
+### Ramping up your data literacy
+
+Data literacy is another indispensable skill. Because Agentic AI systems rely on clean, contextual data, the human role shifts from simply producing data to curating and framing it for machine use. Examples:
+- A marketing analyst might spend less time crunching spreadsheet numbers and more time providing context that helps an AI agent generate actionable insights without **hallucinating** (providing seemingly logical information that is factually wrong).
+- An HR representative may need to prepare anonymized, bias-checked datasets to ensure that hiring recommendations are fair and inclusive — the ability to frame a clear goal or provide context and expertise becomes just as critical as technical expertise.
+
+### Applying systems thinking
+
+Another foundational competency is **systems thinking** — the ability to see how workflows, technologies, and human oversight processes connect to form an adaptive and constantly changing network. For example, an operations leader might design a pre-defined threshold before escalating exceptions to a predefined workflow where autonomous agents can make decisions, blended with a learning experience in which AI tutors handle personalized drills or content delivery, while human instructors provide the mentorship, critical thinking, and inspiration that AI cannot replicate. This systems-thinking mindset requires more than just managing tasks; you must be:
+- **Comfortable with feedback loops** ("the agent did X, we learn from its output, adjust Y, then monitor the downstream effect")
+- **Able to continuously refine processes** based on how agents perform and interact with the broader system.
+
+You'll also need integration skills. This involves understanding how different AI agents, legacy systems, workflows, and human actors fit together, where AI handles routine tasks such as data preparation or scheduling, while the project manager may need to be highly competent at oversight and strategic decisions, where humans focus on relationship-building.
+
+### Weaving in ethics and governance
+
+Ethics and governance responsibilities will also move from abstract concepts to everyday responsibilities. In finance, for instance, a professional will not just take agent-generated forecasts at face value but will validate them and audit the assumptions as accurate, and finally present them to C-suite executives and stakeholders. In healthcare, workers will need to ensure that AI systems handling patient data comply with HIPAA's privacy and security requirements — such as proper access controls and audit logging — before it ever reaches a patient.
+
+Next up is developing and sharpening meta-cognitive skills. The ability to think about thinking becomes crucial. You'll need to develop strong judgment about when to trust AI outputs, how to verify information, and when human oversight is essential. For example, a financial analyst must know when to double-check AI-generated risk assessments against their own domain expertise.
+
+### Enhancing creative problem-solving skills
+
+Perhaps most importantly, creative problem-solving will become the core of human value. As routine work is increasingly automated, human workers will be called upon to bring originality, creativity, and emotional intelligence to the table. For example, copywriters will focus on shaping campaign strategy and developing emotionally resonant messages while delegating large-scale A/B testing (pitting ads against each other to see which one has more success) to AI agents. Software engineers will devote more time to designing robust system architectures while letting AI co-pilots write and optimize code at scale.
+
+As AI handles routine tasks, humans must excel at tackling novel, ambiguous problems that require creativity, empathy, and contextual understanding. For example, a software architect needs to envision innovative system designs while AI handles code generation.
+
+> **Sidebar: Being a Marketing Manager in the Agentic AI Age**
+> To understand how working with AI agents might look in the future, consider this plausible but not-yet-attainable scenario. At 8:30 a.m., Dana logs into her workspace. Instead of sifting through dozens of campaign performance dashboards, her AI agents have already compiled an overnight state-of-play briefing. It flags a surprising drop in engagement for one segment and automatically proposes three hypotheses: a new launch, ad fatigue, and shifting sentiment around pricing and competitor ads. By 9:00 a.m., Dana asks the agents to pull supporting social listening data and competitor ads, and the results are ready, complete with annotated screenshots and sentiment analysis.
+>
+> Dana doesn't just consider the data; she plans and orchestrates the next steps. She instructs the campaign AI agent to run a micro-test with fresh copy and design variants targeted to that at-risk segment. Another AI agent generates a financial projection of the cost and potential uplift, so Dana can approve the spending with confidence that she's still in budget.
+>
+> Throughout the day, Dana's role is less about clicking through dashboards and more about decision-making and storytelling. She crafts the narrative of why the shift matters and presents it to leadership in the afternoon, using slides whose data was auto-generated by AI agents. Instead of spending her time on repetitive reporting, she spends it guiding strategy, aligning cross-functional teams, and imagining creative campaigns that connect emotionally with customers.
+>
+> By evening, Dana's dashboard shows not just metrics but live results from the micro-test, confirming which approach is resonating. The agents have already started scaling the winning version across channels. Dana ends her day satisfied. AI hasn't replaced her. She's been amplified by it, and is now free to enjoy her evening knowing that the agents will keep an eye on everything.
+
+### Reframing old skills and habits
+
+Learning new ways to do your job in an Agentic AI-augmented workplace means leaving the belief that you must follow some linear, rigid, checklist-driven process behind. Instead of relying solely on rigid checklists, organizations need new workflows designed to accommodate agentic systems that thrive on dynamic, real-time, unexpected input, and learn from output. Data hoarding becomes a liability if the information is unstructured or context-free because quality and relevance matter far more than sheer volume.
+
+Other examples of reframing work skills and habits:
+- Professionals will need to grow comfortable with delegating decisions to machines, and only intervening when necessary, and only intervening when necessary. Even technical literacy in low-code environments will need to develop a working knowledge of how to configure agents, connect workflows, or troubleshoot errors in low-code environments.
+
+---
+
+## Roles for Technologists, Creative Professionals, and Leaders
+
+Agentic AI is set to reshape the professional landscape for technologists, creative professionals, and leaders by extending automation capabilities beyond what traditional automation or GenAI can offer. Think of this transition as a global determining exercise. Technologists must shift from being builders of deterministic systems to evolving, semi-autonomous ones. Creative professionals must evolve from sole creators to directors of vast idea ecosystems. Leaders must transform from answer-givers to question-askers and trust-builders.
+
+Other roles throughout business, science, and society will undergo similar disruptions and shifts. The chapter focuses on three categories that represent the workplace changes that people can expect to see across the board.
+
+### Technologists: From builders to orchestrators
+
+For technologists, the shift will feel like moving from coding every instruction to orchestrating a network of intelligent, self-improving systems. Instead of spending their days debugging scripts or manuals, engineers may find themselves curating agent ecosystems and tuning feedback loops to optimize performance.
+
+In the future, a network engineer might supervise self-improving agents that automatically detect and reconfigure network ecosystems around network congestion, while simultaneously deploying guardrails and defining the agents' decision boundaries.
+
+This shift to agent management demands new skills in agent governance, AI safety, and multi-agent orchestration. This shift may also create new job roles such as agent wranglers (for keeping the herd of agents corralled and moving in the right direction) or AI behavior designers (for aligning autonomous behaviors with business goals).
+
+Examples of evolving roles for technologists:
+- **Software engineers become Human-AI system architects:** Their focus shifts from writing code to designing Human-AI blended workflows.
+  - *Example:* Instead of coding a payment system, engineers design how AI agents handle transactions while humans oversee exceptions and compliance.
+- **DevOps engineers become AI operations specialists:** They manage hybrid infrastructures where AI agents deploy, monitor, and scale systems.
+  - *Example:* AI agents automatically provision cloud resources and optimize performance while humans set governance policies.
+- **Data scientists become AI behavior designers:** They move from building models to crafting AI agent personalities and decision-making frameworks.
+  - *Example:* Designing how an AI research assistant prioritizes sources, fact-checks information, and presents findings.
+
+And here are examples of emerging new roles for technologists:
+- **AI agent trainers:** Specialists who teach AI systems domain-specific knowledge and appropriate behavior patterns.
+- **Human-AI interface designers:** Professionals who create seamless and efficient experiences between humans and AI agents.
+- **AI ethics auditors:** Experts who continuously monitor AI agent behavior for bias, safety, and alignment issues.
+
+### Creative professionals: Dictated creations and director roles
+
+Creative professionals in the business arena, such as in marketing and advertising, will likely see their roles evolve from content production to experience design and narrative direction. Agentic AI can one day take care of routine tasks like resizing ads, generating product mockups, or brainstorming and testing hundreds of copy variations. This frees people in creative roles to focus on brand storytelling, emotional resonance, and big-picture concept work. Something similar will happen within other commercial creative spaces, such as filmmaking.
+
+Imagine a filmmaker using a team of agents to handle everything from location scouting, casting suggestions, and visual effect previews to budget projections. The director can then focus almost exclusively on creative vision and audience experience. Eventually you may see something like the traditional role of director morph into something like a creative conductor to better describe the position of a person who choreographs human teams and AI agents to create original works.
+
+Examples of evolving creative roles include:
+- **Graphic Designers become visual experience orchestrators:** They direct AI agents to generate multiple design variations while focusing on strategic creative direction.
+  - *Example:* A designer briefs AI agents to create 50 logo variations and then curates and refines the most promising concepts.
+- **Writers become narrative architects:** They use AI agents to handle research, drafts, and revisions while the writer focuses on voice, strategy, and emotional resonance.
+  - *Example:* A journalist works with AI agents that gather sources and draft sections while the journalist fact-checks for accuracy and crafts the compelling narrative.
+- **Marketing professionals become campaign conductors:** AI agents handle content creation, A/B testing, and optimization while the marketing team focuses on brand strategy.
+  - *Example:* AI agents create and test thousands of ad variations across platforms while marketers focus on brand positioning and customer insights.
+
+Examples of emerging roles for creative professionals include:
+- **AI creative directors:** Professionals who specialize in guiding AI systems to produce brand-consistent, emotionally resonant content.
+- **Prompt engineers for creative industries:** Specialists who craft sophisticated instructions for AI agents in creative contexts.
+- **Context engineers for creative industries:** Specialists who build synthetic data sets containing all the nuances and rules that characterize the context within which the AI responds, so that the AI generates worlds and characters consistently.
+
+### Leaders: From managers to ecosystem orchestrators
+
+Leaders will likely face perhaps the most profound disruption in their day-to-day responsibilities. Executives may need to become comfortable using AI agents to model market scenarios, having these agents serve as strategists or consultants that can stress-test scenarios much faster than any person or team can.
+
+The best leaders will (smartly and strategically) interrogate the AI agent consultants on the recommendations they make and a slew of alternative scenarios, rather than blindly accepting their output. New roles such as chief agentic officer or ethics-and-autonomy lead may emerge to ensure that agent networks operate responsibly and in alignment with organizational values. Leadership itself will become more about making sense of all the moving parts and guiding an increasingly distributed, human-plus-machine workforce to perform in sync with constantly changing scenarios and conditions.
+
+Examples of evolving leadership roles include:
+- **Project managers become Human-AI team coordinators:** They manage hybrid teams where AI agents handle routine tasks while humans focus on strategy, creative problem-solving and relationship building.
+  - *Example:* AI agents track progress, identify bottlenecks, and suggest resource allocation while human managers focus on strategic pivots to address unexpected issues, keep stakeholders aligned, and sustain team motivation.
+- **CEOs and top executives become ecosystem strategists:** They make high-level decisions about which processes to delegate to AI agents versus human teams, and build broader ecosystems of AI and human teams to seize opportunities and tackle challenges.
+  - *Example:* A CEO decides that customer service AI agents handle 80% of inquiries while human agents focus on complex relationship management.
+- **HR professionals become human-AI workforce designers:** They design organizational structures that optimize employee interactions with AI agents.
+  - *Example:* HR creates new job categories, performance metrics, and training programs for hybrid human-AI teams.
+- **Human-AI integration consultants:** Experts who help creative teams effectively integrate AI agents while maintaining human creativity and skills.
+
+---
+
+## Lifelong Learning and Agile Adaptation
+
+Unlike past eras in which having a college degree or other credential could carry you through decades of employment, this new era of the AI workplace is marked by upheaval. Agentic systems do not just replace a fixed set of tasks once. They continuously evolve, shifting what work looks like, maybe even from month to month.
+
+To stay gainfully employed in the AI age means lifelong learning is no longer an optional professional development exercise; it's a survival strategy. You have to keep growing your skillset as you go to match the jobs as they evolve. Those who can quickly acquire new skills will capture far more employment opportunities than those who resist change.
+
+### Two example scenarios
+
+- Suppose that a marketing professional who built one set of campaign tactics learned five years ago. They risk being outpaced by AI agents that can launch and monitor thousands of micro-tests across channels far faster than humans alone. If you are that marketing professional, you must shift your focus to interpreting agent-driven insights, translating them into brand strategy, and designing parameters for the agents to run confidently.
+- Consider the technologist who built what seemed like a perfect CI/CD pipeline (an automated process to get their team to deployment smoothness) last year. Then, they discover (to complete dismay) that an optimization agent has reimagined the pipeline in a completely new way. Rather than fight that change, the technologist must understand what the agent did and why, adapt to the redesign, and move into a role of orchestrating parameters, incorporating hybrid workflows between humans and agents.
+
+### Developing a strategic learning framework
+
+A strong approach to staying relevant in the Agentic AI age involves employing three interconnected layers of learning:
+
+- **AI literacy:** The foundation layer is the bedrock that supports everything else: gaining a clear understanding of how AI systems work and learning to work with them effectively. Fortunately for many people, this doesn't require a computer science degree; instead, it means making a daily commitment to learning something new about AI.
+  - Try spending half an hour each day experimenting with different AI tools, taking online courses in prompt engineering, or exploring the fundamentals of AI. Over time, these habits build a fluency that turns AI from a scary or bewildering mystery into knowledge that you can embrace.
+- **Domain insights:** This second layer builds on the AI literacy foundation by tracking how AI is transforming your specific industry or discipline. This layer involves keeping pace with change — not just AI adopters in general — but the unique ways AI is evolving in your field.
+  - Subscribing to industry-specific AI newsletters, listening to podcasts, attending conferences, and connecting with early adopters can create a constant flow of fresh insights.
+- **Learning how to learn:** This final layer helps you prove to prospective employers that you know how to learn and have the fortitude to stick with a learning plan for the long term. Formerly, getting a college degree was how everyone proved this. Now you, along with everyone else, prove employment value with technology literacy that you'll cultivate continuously over time.
+
+> **Sidebar note (data point):** According to Lightcast, a leading labor-market data firm, the workforce skill decay rate has never been higher and it's accelerating. About one-third of the skills required for the average U.S. job in 2024 differ from what they were in 2021; in high-disruption occupations, up to about 75 percent of skills changed in a three-year period.
+
+The people who thrive in this era will cultivate habits of intellectual curiosity, reflection, and rapid experimentation. For instance, a leader with a mental-agility mindset might set aside time each quarter to run scenario-planning sessions with AI strategist agents, incorporating AI tools into lesson plans rather than banning them. This effectively means using AI tools to spend just as much time learning as they do teaching.
+
+### Building actionable learning strategies
+
+One of the most effective approaches to staying competitive is using the **70-20-10 learning model**, applied here to a world in which human workers are accompanied by AI agents in the workforce. The breakdown goes like this:
+
+- **Seventy percent of learning** should come from direct, hands-on experience — on projects that require human-plus-AI work, volunteering for AI pilot programs at work that require new tools and workflows.
+  - This means taking on projects with others who are also navigating the shift. Finding mentors who successfully integrate AI into their work, joining mastermind groups, and participating in cross-functional teams can accelerate your understanding.
+- **Twenty percent of learning** is social. This means absorbing insights from others who are also navigating the shift. Social learning creates a space for shared discovery and collective problem-solving.
+  - A good example is a lawyer who joins a legal tech meetup and partners with a technologist to explore AI-driven contract review. That collaboration gives her an edge in understanding where the technology could truly add value and where human oversight is still essential.
+- **Ten percent of learning** should come from formal, structured courses and experiences. You might take specialized courses on emerging technologies, pursue certifications in AI-related skills, or attend intensive workshops and bootcamps.
+  - Structured learning experiences provide a framework for deeper understanding, lend credibility to your expertise, and help prevent gaps in your understanding from rolling in unnoticed. The program not only expands their knowledge but positions them as a go-to resource within their organization.
+
+> **Sidebar note (author's disclosure):** "I would be remiss at this point not to mention that I am an instructor at LinkedIn Learning, and I do conduct workshops, training sessions, and give talks on various AI skills and applications. I disclose this information only to explain that I am not advocating this step for my own benefit — not 'Yay; more learners in my old classes!' — but rather that this model has nothing at all to do with my teaching. More learners in my old courses is a proven and age-old structure that is, and always welcome to join me in any of my many courses and workshops."
+
+Underlying your strategy is a continuous feedback loop that keeps your learning intentional and aligned with the changing needs of your job or workplace:
+- **Weekly experiments** with new tools or techniques create a rhythm of discovery.
+- **Monthly reflection sessions** help identify what's working and what isn't.
+- **Quarterly pivots** ensure that your efforts stay aligned with strategic goals.
+- **Annual reviews** of your overall skill portfolio and market positioning help ensure you are always moving in step with, or just ahead of, industry shifts.
+
+This feedback loop cycle works with the 70-20-10 learning model, as depicted visually in Figure 12-1. It transforms learning from a one-off activity into an ongoing engine for your own professional growth.
+
+**Figure 12-1: A learning feedback loop system embedded in the 70-20-10 learning model.**
+| Segment | Share | Description |
+|---|---|---|
+| Experiential learning | 70% | Work on projects that require human-AI interaction |
+| Social learning | 20% | Find mentors who successfully work with AI |
+| Formal learning | 10% | Attend courses covering emerging technologies |
+
+The three segments feed into a central **Feedback loop cycle**, which continuously informs and adjusts the balance of learning activity. *(Figure generated with AI using OpenAI.)*
+
+### Future-proofing your career
+
+A five-year learning horizon offers a powerful way to stay ahead in the Agentic AI era. Just don't be too rigid about it because AI will continue to evolve over those five years and you'll need to adapt your learning plan accordingly. Professionals who can follow the kind of steady learning progression depicted in Figure 12-2 not only survive the Agentic AI revolution, but also thrive in it because they set the benchmarks for what a successful human-AI combination workplace looks like in the decades to come.
+
+**Figure 12-2: A Five-Year Learning Plan**
+| Years | Stage | Focus |
+|---|---|---|
+| Years 1–2 | Foundation Building | Achieve AI literacy; experiment with tools in your domain; build learning habits and networks |
+| Years 3–4 | Specialization and Leadership | Develop expertise with human-AI interaction; lead AI initiatives; mentor others in adaptation strategies |
+| Years 5+ | Innovation and Value Creation | Create business models that combine human-AI expertise; become a thought leader in your transforming domain |
+
+Think about a five-year learning plan this way:
+- **The first two years** should focus on laying a strong foundation in AI literacy. If you do, jump ahead to the plan for years three to four. If you don't have one already, then this is the time to achieve basic AI literacy, experiment with tools relevant to your field, and establish habits of regular learning. Building a professional network of peers and mentors who are also exploring AI ensures you are not navigating this transition alone.
+- **By years three and four**, the emphasis should shift to specialization and leadership. At this stage, you begin to develop unique expertise in human-AI interaction and take on a more proactive role on refining workflows and mentoring others in your organization. Leading AI pilot projects and developing adaptation strategies will move your status from learner to guide. These are where you begin to shape how your team and organization interact with intelligent systems.
+
+---
+
+## Ethical Fluency and Human Judgment
+
+**From year five onward**, the focus moves toward leveraging your accumulated knowledge and value creation. This is where you start business models, products, or processes that rely on entirely new human-AI combined expertise. Your experience positions you to influence industry standards, shape policy, or contribute to defining the future of work itself.
+
+As AI agents become increasingly sophisticated at pattern recognition, data processing, and even creative tasks, the distinctly human capabilities of ethical reasoning and moral judgment emerge as two of humans' most valuable traits. While AI systems can optimize for predetermined objectives and follow programmed guidelines, they fundamentally lack the life experience, cultural context, and moral intuition that inform truly ethical decision-making.
+
+The rise of Agentic AI creates unprecedented ethical complexity. These systems don't just process information. They make semi-autonomous or fully autonomous decisions that affect real people's lives, sometimes in ways their creators never anticipated.
+
+- An AI hiring agent doesn't just screen resumes; it may shape career trajectories and reinforce or challenge societal biases.
+- An AI agent managing supply chain doesn't just optimize costs; it can influence labor conditions and environmental impact across global communities.
+
+This complexity demands professionals who can navigate ethical gray areas with nuance and wisdom that no algorithm can replicate. The ability to weigh competing values, understand unintended consequences, and make morally sound decisions under varying degrees of uncertainty becomes a premium skill that organizations desperately need and can't automate.
+
+### Understanding ethical fluency
+
+Ethical fluency extends far beyond knowing right from wrong or following compliance guidelines. It represents a sophisticated understanding of how values intersect with technology, how decisions ripple through complex systems, and how to balance competing stakeholder interests in morally ambiguous situations. Ethical fluency also involves recognizing the limitations of one's own perspective and seeking diverse viewpoints to inform better decisions. It requires understanding power dynamics, cultural differences, and unconscious biases that influence both human and AI decision-making processes.
+
+Consider a product manager working with an AI agent on a social platform. The AI identifies that controversial content drives higher user engagement interaction rates. Ethical fluency enables the manager to recognize that optimizing purely for engagement could amplify polarization and harm — and to design systems that also weigh business benefits against societal costs, promoting healthy discourse rather than mere attention capture.
+
+This type of reasoning requires deep understanding of ethical frameworks, stakeholder impact analysis, and the long-term consequences of technological choices. It demands the ability to question not just whether something can be done, but rather whether something should be done, and how to design systems that align with human values rather than simply maximizing narrow metrics.
+
+### Appreciating the value of human judgment
+
+Human judgment encompasses our ability to make sound decisions in ambiguous situations where data is incomplete, stakes are high, and multiple valid perspectives exist. While AI excels at processing vast amounts of information and identifying patterns, human judgment integrates emotional intelligence, cultural context, historical understanding, and moral intuition in ways that remain uniquely valuable — and human.
+
+Take a healthcare administrator working with AI agents that optimize hospital resource allocation. The AI might recommend closing certain services based purely on utilization metrics and cost efficiency. Human judgment enables the administrator to consider factors the AI cannot quantify, such as:
+- Symbolic importance of certain services to community trust
+- Potential impact on vulnerable populations who rely on those services
+- Long-term effects of seemingly purely economic decisions on the hospital's reputation
+
+Human judgment also excels in situations requiring empathy and understanding of unusual behavior. When an AI agent flags an employee for unusual behavior patterns, human judgment can distinguish between someone struggling with personal challenges versus someone genuinely engaged in problematic conduct.
+
+Furthermore, human judgment involves the ability to challenge assumptions when new information emerges. Unlike AI systems that operate within fixed or retrained parameters, human judgment allows for real-time adaptation based on intuition, changing circumstances, and recognition of when existing frameworks no longer apply.
+
+### Creating your personal development plan
+
+Building ethical fluency and judgment requires sustained effort over time, but the investment pays dividends throughout your career as these skills become increasingly valuable. The first step is to make a plan to ensure you develop and maintain the necessary skills. Here's a plan to follow:
+
+- **Establish a solid grounding in ethical theory and critical thinking.** Study major philosophical approaches to ethics and how they apply to contemporary moral challenges. Simultaneously, start a practice of regular moral reflection, examining your own decisions and the values that guide them. This self-awareness forms the foundation for more sophisticated ethical reasoning.
+- **Seek out opportunities to wrestle with real ethical dilemmas in your work context.** Volunteer for committees dealing with AI governance, participate in ethics discussions, and take on projects that involve balancing competing stakeholder interests. The key is moving beyond theoretical understanding to practical application under real-world constraints.
+- **Gather viewpoints that challenge your assumptions and expose you to different ways of thinking about moral questions.** This might involve reading literature from different cultural traditions, engaging with people from backgrounds unlike your own, or studying historical approaches to similar challenges. The goal is to expand your moral imagination and ability to see issues from multiple angles.
+
+As your capabilities develop, look for opportunities to influence ethical decision-making in your organization and industry — in ethical reasoning, contributing to policy development, or advocating for more thoughtful approaches to AI implementation.
+
+### Emotional Intelligence versus Intuitive Intelligence
+
+The chapter recaps the meaning and importance of both emotional intelligence and intuitive intelligence (covered earlier in the book, in Chapter 2). The two are closely related but distinct, and both have become increasingly valuable in the Agentic AI age because they are skills that you should develop and improve to excel in your work with AI agents:
+
+- **Emotional intelligence** is the ability to recognize, understand, and manage emotions, your own and those of others. It is what allows you to navigate conflict gracefully, build trust, and inspire collaboration with other people or departments, even when work is mediated through digital platforms and AI-driven systems. Emotional intelligence ensures that human interactions remain empathetic and relationship-driven as opposed to being solely logical.
+- **Intuitive intelligence**, by contrast, is the ability to synthesize experience, tacit knowledge, and subtle cues to make rapid, often subconscious judgments. It's what allows someone to sense when an AI's output feels off even before they can articulate why, or to spot a novel opportunity emerging in market data. Intuition bridges the gap between hard analytics and human common sense.
+
+Intuitive intelligence helps people make faster, better-informed decisions when time is short or data is incomplete.
+
+Together, these forms of intelligence bring employment value by complementing the things AI cannot do. Beyond employment value, both intelligences keep you grounded, creative, and connected to much of the world's cognitive experience — where autonomous systems perform much of the world's cognitive labor.
+
+---
+
+## Key Takeaways
+
+- Working with Agentic AI shifts the human role from task executor to **manager, orchestrator, curator, and strategist** — managing AI agents instead of (or alongside) people.
+- Critical new skills include **data literacy, systems thinking, ethics/governance fluency, meta-cognition** (knowing when to trust AI output vs. apply human oversight), and **creative problem-solving**.
+- Roles evolve along predictable patterns: **technologists** move from builders to orchestrators of self-improving agent ecosystems; **creative professionals** move from sole creators to directors/curators of AI-generated options; **leaders** move from answer-givers to ecosystem strategists and question-askers.
+- New emerging job titles include chief agentic officer, AI agent trainers, human-AI interface designers, AI ethics auditors, AI governance officers, human-AI team psychologists, and AI ROI analysts.
+- **Lifelong learning is now a survival strategy**, not optional career development — workforce skill decay is accelerating (per Lightcast, up to ~75% of skills change within 3 years in high-disruption occupations).
+- A strategic learning framework has three layers: **AI literacy** (daily habit), **domain insights** (industry-specific trends), and **learning how to learn** (proving adaptability to employers).
+- The **70-20-10 learning model**: 70% experiential (hands-on projects with AI), 20% social (mentors, mastermind groups), 10% formal (courses, certifications) — sustained by a continuous feedback loop of weekly experiments, monthly reflection, quarterly pivots, and annual reviews.
+- A **five-year career plan**: Years 1–2 foundation building (AI literacy, experimentation, networks); Years 3–4 specialization and leadership (expertise, leading AI initiatives, mentoring); Years 5+ innovation and value creation (new business models, thought leadership).
+- **Ethical fluency** and **human judgment** become premium, non-automatable skills as AI agents make increasingly autonomous decisions with real-world consequences (hiring, supply chains, resource allocation) — the ability to navigate moral gray areas and weigh competing values that no algorithm can replicate.
+- **Emotional intelligence** (managing/recognizing emotions in self and others) and **intuitive intelligence** (rapid judgment from tacit experience) are distinct but complementary, and both grow more valuable as work becomes more AI-mediated.
+
+---
+
 # Chapter 13: Scoping the Future of Agency (pp. 285–300)
 
 ## In This Chapter
@@ -257,3 +540,6 @@ Agentic AI is more than a tech trend; these systems are forging a massive transf
 - The future of Agentic AI is shaped by human choices, not predetermined fate — it could trend utopian, dystopian, or (most likely) a mixed "middle road," depending on governance, value alignment, and how transition costs (e.g., job displacement) are managed.
 - Agentic AI offers tangible near-term lifestyle benefits (errand automation, finance management, personalized learning, shopping, travel planning) but has persistent weaknesses: emotional nuance, ethical judgment, novel/unstructured problems, creative vision, big-picture/systemic reasoning, crisis response, competing-preference balancing, trust-building, privacy respect, and admitting uncertainty.
 - Bold predictions for the next decade include agents replacing apps as the primary digital interface, "A-commerce" overtaking e-commerce, AI agent optimization replacing SEO, new legal/insurance frameworks for agents, mainstream personalized AI education, digital labor markets for agents, AI-driven preventive healthcare, and AI-enabled social/labor organizing.
+
+---
+
