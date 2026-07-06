@@ -1,3 +1,5 @@
+# Machine Learning for Dummies
+
 # Chapter 1: Getting the Real Story About AI
 
 ## Moving Beyond the Hype
@@ -964,3 +966,418 @@ For very large datasets that don't fit in memory, **stochastic gradient descent 
 - Linear and logistic regression are simple, interpretable baseline models for regression and classification respectively.
 - Categorical features need encoding (one-hot); nonlinear relationships can be captured via interaction/polynomial terms.
 - Overfitting from too many/correlated features can be addressed via greedy feature selection or regularization (L1/L2); SGD enables learning from datasets too large to fit in memory.
+
+---
+
+# Chapter 13: Going Beyond the Basics with Support Vector Machines
+
+## Overview
+SVMs grew out of rigorous statistical learning theory (Vladimir Vapnik and colleagues) and were designed specifically to solve the nonlinear separability problem in classification. Initially met with skepticism, they became a dominant method for image recognition and language processing. Their power lies in *representation* — correctly capturing the data problem so the algorithm produces reliable predictions on new data.
+
+## Revisiting the Separation Problem
+Not all classes can be divided by a straight line. Earlier fixes each have limits:
+- **k-nearest neighbors** — adapts to nonlinear boundaries but is expensive at scale.
+- **Logistic regression** — estimates class probability, works only when classes are linearly separable (or nearly so).
+- **Feature transformations** — polynomial expansions and feature creation can bend boundaries, but require engineering skill and risk creating too many features.
+- **Decision trees** — naturally handle nonlinearity and build classification boundaries with multiple rule splits.
+
+SVMs unify this: they perform well and are immensely flexible thanks to *kernel functions*, achieving better classification with an automatic, mathematically grounded feature transformation.
+
+## Explaining the Algorithm
+- A perceptron-style separating line can sit in many positions between two classes; SVM chooses the **one with the largest margin** — the widest strip between the boundary and the nearest points of each class.
+- Points touching the margin are the **support vectors** — they alone define the hyperplane; other points do not influence it.
+- Key terms: **margin** (separating zone), **separating hyperplane** (the decision boundary in feature space), **support vectors** (critical boundary examples).
+- Maximizing the margin gives the best generalization: new examples are less likely to fall on the wrong side.
+
+## Avoiding the Pitfalls of Nonseparability (soft margin)
+Real data is noisy; perfect separation often impossible or leads to overfitting. SVMs introduce **slack**: some examples may sit inside the margin or on the wrong side, traded off by the **C hyperparameter**:
+- **Large C** — few violations allowed, tighter fit, risk of overfitting.
+- **Small C** — wider, softer margin, more misclassifications tolerated, better generalization on noisy data.
+
+## Applying Nonlinearity
+When classes aren't linearly separable even with slack, SVMs map data to a **higher-dimensional space** where a linear hyperplane can separate them. Doing this explicitly would explode dimensionality and computation.
+
+## Explaining the Kernel Trick by Example
+**Kernel functions** compute the result of a dot product in the transformed high-dimensional space *without ever computing the transformation itself* — the kernel trick. Common kernels:
+- **Linear** — no transformation; baseline.
+- **Polynomial** — degree, gamma, and coef0 parameters shape curved boundaries.
+- **Radial Basis Function (RBF)** — most flexible and most used; gamma controls the radius of influence of each support vector. Small gamma = smoother, wider influence; large gamma = wiggly, tight boundaries that can overfit.
+- **Sigmoid** — neural-network-like kernel.
+
+Tuning C together with gamma controls the bias/variance balance; visual comparisons (Figure 13-3) show margins going from smooth to overfitted as gamma/C grow.
+
+## Classifying and Estimating with SVM
+- Practical SVMs come from **LIBSVM** and **LIBLINEAR** (National Taiwan University), wrapped in Python by scikit-learn (`SVC`, `LinearSVC`).
+- LIBLINEAR handles large linear problems fast; SVC with kernels suits complex, smaller datasets.
+- Example: handwritten digit recognition on scikit-learn's `digits` dataset (a portion of MNIST; the full dataset has 60,000 training + 10,000 test examples):
+
+```python
+from sklearn.datasets import load_digits
+digits = load_digits()
+X, y = digits.data, digits.target
+```
+
+- **Scaling matters**: SVMs converge faster and more reliably when features are scaled — use `MinMaxScaler` in a pipeline before fitting.
+- Cross-validation plus `GridSearchCV` over kernel (`linear` vs `rbf`), `C` (logspace), and `gamma` finds the best combination:
+
+```python
+from sklearn.model_selection import GridSearchCV
+search_space = [{"svc__kernel": ["linear"], "svc__C": np.logspace(-3, 3, 7)},
+                {"svc__kernel": ["rbf"], "svc__C": np.logspace(-3, 3, 7),
+                 "svc__gamma": np.logspace(-3, 2, 6)}]
+gridsearch = GridSearchCV(svc, param_grid=search_space, refit=True, cv=10)
+```
+
+Result: ~99% cross-validated accuracy distinguishing all ten handwritten digits.
+
+## Key Takeaways
+- SVMs maximize the margin; only support vectors matter.
+- C trades margin softness vs. violations; gamma (RBF) trades smoothness vs. fit.
+- The kernel trick gives nonlinear power without explicit feature explosion.
+- Always scale features and grid-search C/gamma with cross-validation.
+
+---
+
+# Chapter 14: Tackling Complexity with Neural Networks
+
+## Overview
+Neural networks — the core algorithms of the connectionist tribe — are inspired by the brain but are mathematically just sophisticated, nonlinear forms of regression. They excel at complex problems (image and sound recognition, machine translation) and scale from small models to very large ones. Modern deep learning architectures (CNNs, transformers/attention, generative networks behind ChatGPT and Google Gemini) all build on the fundamentals in this chapter.
+
+## Revising the Perceptron
+- A neural network's building block is the neuron (unit), a direct descendant of the perceptron.
+- A unit: (1) takes inputs (features or other units' outputs), (2) weights each input connection, (3) sums the weighted inputs, (4) passes the sum through an **activation function** to produce output.
+- A single perceptron can only separate classes with a straight line (e.g., can't solve XOR); networks of units overcome this limit.
+
+## Structure and activation functions
+- **Activation functions** transform the summed input nonlinearly — without them, stacked linear units collapse into a single linear transformation. Common choices: sigmoid (logistic), tanh, **ReLU**, GELU, and Swish; ReLU-family functions dominate modern deep learning because they train faster and dampen vanishing-gradient problems.
+- Inputs should be normalized/standardized to match activation ranges (e.g., 0–1 or −1 to +1).
+
+## Pushing Forth with Feed-Forward
+- Architecture: **input layer** (one unit per feature) → one or more **hidden layers** → **output layer**. In a feed-forward network, information flows one way — no loops; each layer's units connect to the next layer's units.
+- More layers/units = capacity to represent more complex feature combinations; hidden layers progressively recombine features into more abstract representations.
+- The output layer converts final signals into the prediction: a single unit for regression, a sigmoid for binary classification, or a **softmax** layer producing class probabilities that sum to one for multiclass problems (e.g., Palmer Penguins species: Adelie, Chinstrap, Gentoo).
+
+## Going even deeper down the rabbit hole
+- Weights are stored as matrices (W1 for input→hidden, W2 for hidden→output, etc.); forward propagation is a chain of matrix multiplications each followed by the activation: h = g(W·x), repeated layer by layer until the output.
+- Step-by-step forward pass: take inputs → multiply by first-layer weights → apply activation → feed result to next layer → repeat → output layer transforms the final signal into predictions.
+
+## Pulling back with Backpropagation
+- Training = finding weights that minimize a **cost function** (e.g., cross-entropy for classification) between predictions and targets.
+- **Backpropagation** sends the output error backward through the network, using the chain rule to compute each weight's contribution to the error; weights update in proportion to their responsibility (the delta, δ).
+- Updates use **gradient descent** with a **learning rate (eta, η)** controlling step size; too high overshoots, too low crawls.
+- Weight initialization: small random values (or clever schemes) — all-zero or identical weights would make units learn the same thing.
+- Update scheduling:
+  - **Online mode** — update after every single example (noisy but fast to react; suits streaming).
+  - **Batch mode** — update once per full pass over the training set (stable but slow, more prone to poor local minima on big data).
+  - **Mini-batch mode** — update after small random subsets; the practical standard, mixing speed and stability, and enabling stochastic gradient descent behavior that escapes bad local minima.
+
+## Understanding Network Learning and Overfitting
+Neural networks are so flexible they can memorize training data instead of learning it. Hyperparameters that control this:
+- **Architecture** (layers and units) — larger networks fit more but overfit more easily.
+- **Activation function choice** — affects what the network can learn and how it trains.
+- **Learning parameters** — learning rate and its decay; too fast a rate blocks learning, too slow wastes epochs.
+- **Number of epochs** — more passes over the data raise overfitting risk.
+
+Use train/validation/test splits and watch the validation-error curve: it falls with training error at first, then rises again when overfitting begins — stop there (**early stopping**, Figure 14-5).
+
+## Choosing a Framework
+Build networks with a framework rather than from scratch. Landscape:
+- **TensorFlow** (Google Brain) — the most widely adopted, production-grade, big-industry backing.
+- **Keras** (François Chollet) — high-level API designed to make deep learning accessible; now able to run on top of TensorFlow, JAX, or PyTorch as backends.
+- **PyTorch** (Facebook/Meta) — favored by researchers and academia, dynamic and Pythonic.
+
+## Opening the Black Box (Keras example)
+- Two-moons synthetic dataset: a nonlinear separation problem laid out in a Cartesian plane.
+- Sequential Keras model: stacked `Dense` layers with `relu` activations plus `Dropout` layers, ending in a single `sigmoid` output unit; compiled with `binary_crossentropy` loss and the **Adam** optimizer.
+- **Dropout** randomly silences a fraction of units each pass (e.g., 0.4), preventing co-adaptation and overfitting.
+- Training with `model.fit` on train/test splits reaches high accuracy; plotting the decision surface shows the network bending a smooth nonlinear boundary around the two moons.
+
+## Introducing Deep Learning
+Deep learning = the same neural-network machinery scaled up: many more layers, much more data, GPUs/TPUs for compute. Essentials:
+- Deep networks learn **hierarchies of features** automatically, removing manual feature engineering.
+- Enabled by ReLU activations, better initializations, dropout, and GPU hardware — fixes for the **vanishing gradient** problem that stalled deep networks (Geoffrey Hinton's work reignited the field).
+- Powers image recognition, speech, machine translation, and modern generative AI.
+
+## Explaining the Magic of Convolutions
+- **CNNs** scan images with small filter windows (convolutions); each filter slides across the image producing a feature map that detects a specific local pattern (edges, corners, shapes) regardless of position.
+- Stacked convolution + pooling layers build from pixels → edges → parts → whole objects.
+- Fashion-MNIST example (60k 28×28 clothing images, 10 classes): Keras model with two `Conv2D` layers (32 then 64 filters, 3×3 kernels), `MaxPooling2D`, `Flatten`, `Dense` + `Dropout`, softmax output; trained with sparse categorical cross-entropy, reaching high accuracy in a few epochs.
+
+## Understanding Recurrent Neural Networks
+- **RNNs** handle sequences (text, time series) by feeding each step's output back as input to the next step — a memory of what came before.
+- Plain RNNs forget long-range context (vanishing gradients over time).
+- **LSTM** (Long Short-Term Memory, Hochreiter & Schmidhuber 1997) fixes this with gated cells: **input gate**, **forget gate**, and **output gate** managing short-term vs. long-term memory; **GRU** is a simplified variant.
+- Air Passengers dataset example: normalize the series, window past time steps as predictors, reshape to 3-D (samples × timesteps × features), stack LSTM layers in Keras, and forecast monthly passengers — the prediction tracks the actual seasonal curve closely.
+- Convolutional and recurrent networks are the gateway to fuller deep learning study (NLP was long LSTM-dominated before newer architectures).
+
+## Key Takeaways
+- Neural networks stack simple weighted units with nonlinear activations to model arbitrarily complex functions.
+- Control overfitting with validation curves, early stopping, and dropout.
+- CNNs own images; LSTMs/RNNs own sequences; frameworks (Keras/TensorFlow/PyTorch) do the heavy lifting.
+- Feed-forward defines prediction; backpropagation + gradient descent define learning.
+- Architecture (layers, units, activations), learning rate, and batch strategy are the main knobs.
+- Deep learning is this same machinery scaled up with more data, layers, and compute.
+
+---
+
+# Chapter 15: Resorting to Ensembles of Learners
+
+## Overview
+Combinations of simpler machine learning algorithms often outperform the most sophisticated single models. **Ensembles** are groups of models made to work together for better predictions. The chapter covers bagging, Random Forests, AdaBoost, gradient boosting (XGBoost, LightGBM, CatBoost), and averaging/blending/stacking — illustrated on the Wine dataset.
+
+## Leveraging Decision Trees
+- Analogy: the "wisdom of crowds" — averaging many independent estimates beats most individual guesses (Francis Galton's ox-weight fair experiment). Errors cancel when estimates are uncorrelated.
+- Single decision trees are easy to use (mixed feature types, no preprocessing, ignores redundant features, white-box interpretability) but are **high-variance**: small data changes yield very different trees, and deep trees overfit.
+- Ensembling many varied trees and averaging their outputs keeps the trees' flexibility while smoothing away their instability.
+
+## Growing a forest of trees — Random Forests
+- **Bagging** (bootstrap aggregating): train each tree on a bootstrap sample (random sampling with replacement) of the training data, then average predictions (regression) or majority-vote (classification).
+- **Random Forests** (Leo Breiman) add a second layer of randomness: at each split, only a random subset of features is considered — decorrelating the trees so their errors cancel better.
+- Out-of-bag (OOB) examples — the rows a tree never saw — give a free validation estimate without cross-validation.
+- More trees never overfit more; error plateaus as the number of trees grows (mean-absolute-error vs n_estimators curve flattens ~100-300 trees).
+- scikit-learn: `RandomForestClassifier` / `RandomForestRegressor`; key knobs are `n_estimators` and `max_features`. Extremely Randomized Trees (ERT) randomize split points too — faster, sometimes better.
+
+## Understanding the importance measures
+- RF ranks features automatically: **Gini/mean decrease impurity** importance (fast, built-in, biased toward high-cardinality features) and **permutation importance** (shuffle one feature, measure the accuracy drop — more reliable, works on a held-out test set).
+- scikit-learn: `rf.feature_importances_` and `sklearn.inspection.permutation_importance`. On the Wine quality data, alcohol, volatile acidity, and sulphates dominate.
+
+## Learning from Mistakes and Weak Learners — Boosting
+- **Boosting** is the opposite strategy of bagging: instead of independent parallel models, train **weak learners sequentially**, each new model focusing on the examples the previous ones got wrong.
+- Weak learners are simple models (stumps, shallow trees, linear models) that individually do only slightly better than chance but combine into a strong learner.
+
+### AdaBoost
+- First practical boosting algorithm (Freund & Schapire). Each iteration reweights training examples: misclassified examples get **larger weights** so the next weak learner concentrates on them; each learner also gets a coefficient (alpha) proportional to its accuracy.
+- Final prediction: weighted vote H(X) = sign(Σ αₜhₜ(X)).
+- Works with any base estimator (trees, KNN, linear); scikit-learn `AdaBoostClassifier`/`AdaBoostRegressor` with a `base_estimator` and `n_estimators`.
+
+## Boosting via Gradient Descent (GBM)
+- **Gradient Boosting Machines** (Jerome Friedman) generalize boosting: each new model fits the **negative gradient of the loss function** (for squared error, simply the residuals) of the ensemble so far — boosting as gradient descent in function space.
+- Key hyperparameters:
+  - **Learning rate / shrinkage (v)** — small steps (e.g., 0.1) with more trees generalize better.
+  - **Subsampling** — stochastic gradient boosting trains each tree on a random data fraction, reducing overfitting.
+  - **Trees of fixed size** — shallow trees (depth 3-5) as weak learners; depth controls interaction order.
+- scikit-learn: `GradientBoostingRegressor`/`Classifier`.
+
+## Considering the state of the art in tabular data
+- **XGBoost** — optimized, regularized gradient boosting; multicore, sparse-aware, handles missing values; long the Kaggle competition standard.
+- **LightGBM** (Microsoft) — histogram-based, leaf-wise growth; very fast on large data, native categorical support.
+- **CatBoost** (Yandex) — built for categorical features with ordered target encoding; strong defaults, less tuning.
+- All three follow the scikit-learn fit/predict API; examples on the Wine dataset show each reaching comparable low mean-absolute-error, with speed/handling trade-offs.
+
+## Averaging Different Predictors
+Simple ensemble by hand: train different algorithm families (e.g., GBM + SVR + others), divide data into train/validation, record each model's predictions, and average them — errors of diverse, well-performing models cancel, usually beating any single one.
+
+## Blending solutions
+- **Blending** weights each model's contribution instead of straight averaging; weights are learned on a holdout set (e.g., via a meta-regressor on validation predictions). `VotingClassifier`/`VotingRegressor` in scikit-learn support hard/soft voting and weights.
+
+## Stacking diverse solutions
+- **Stacking** goes further: the out-of-fold predictions of multiple base models become **input features to a second-level meta-model** that learns the best combination. scikit-learn: `StackingRegressor`/`StackingClassifier` with cross-validated internals.
+- On the Wine example, stacking achieved the lowest mean absolute error of the chapter, at the cost of complexity and compute.
+- Caveat: in real-world practice, added stacking complexity sometimes buys only marginal gains — prefer the simplest ensemble with equivalent performance.
+
+## Key Takeaways
+- Ensembles win by combining diverse, decorrelated models: bagging cuts variance, boosting cuts bias.
+- Random Forests are the robust default; gradient boosting (XGBoost/LightGBM/CatBoost) is the tabular state of the art.
+- Averaging → blending → stacking trade simplicity for accuracy.
+- Use OOB estimates and permutation importance for free validation and interpretation.
+
+---
+
+# Chapter 16: Classifying Images
+
+## Overview
+Vision is one of machine learning's most valuable capabilities: classifying images powers robotics, handwriting recognition, medical scans, pedestrian detection in cars, and precision agriculture. The chapter covers data augmentation, the CNN revolution, transfer learning, and two hands-on Keras projects (cats vs. dogs from scratch, then with a pre-trained network).
+
+## Learning the Magic of Data Augmentation
+- Deep networks need lots of images; **image augmentation** derives new training images from existing ones, acting as regularization (like L1/L2/dropout) and helping the network generalize to altered viewing conditions.
+- Common augmentations (Figure 16-1): **flip** (mirror), **rotation**, **random crop**, **color shift**, **noise addition**, **information loss** (random occlusion/cutout), **contrast change**.
+- Keras applies these on the fly during training via augmentation layers, so the network rarely sees the exact same image twice.
+
+## Revising the State of the Art in Computer Vision
+- **Devising the CNN architecture**: computer vision dates to the 1966 MIT Summer Vision Project; decades of hand-crafted pipelines gave way to **convolutional neural networks** that learn features directly from pixel data.
+- **Witnessing a renaissance**: the ImageNet dataset (14M+ labeled images) and the ILSVRC competition sparked the deep learning era — **AlexNet (2012)** (Krizhevsky, Sutskever, Hinton) won by a large margin using ReLU and GPUs. Later landmark architectures brought further leaps:
+  - **VGGNet (2014)** — small 3×3 convolutions stacked deep.
+  - **ResNet (2015)** — residual skip connections enabling very deep networks; surpassed human-level top-5 accuracy on ImageNet.
+- Milestone architectures are freely available with pre-trained ImageNet weights.
+
+## Discussing transfer learning
+- **Transfer learning** reuses a network pre-trained on a large dataset (e.g., ImageNet) for a new task with far less data and compute.
+- Approaches: use the pre-trained convolutional base as a **fixed feature extractor** (freeze its weights, train only a new classification head), or **fine-tune** some upper layers on the new data.
+- Freeze early layers (generic edges/textures); retrain later layers (task-specific patterns) only when you have enough data.
+
+## Going beyond classification
+CNNs also support richer tasks (Figure 16-2):
+- **Detection** — determine whether an object is present.
+- **Localization** — bounding boxes around objects.
+- **Semantic segmentation** — classify every pixel by object class.
+- **Multiple detection / instance segmentation** — many objects, each outlined at the pixel level.
+
+## Classifying Images with CNNs — building a classifier from scratch
+- Task: binary cats-vs-dogs classifier on a Hugging Face "cats and dogs" dataset (~2,600 images), resized to 256×256, split into train/validation/test.
+- Preprocessing: decode images to arrays, scale pixels 0–1; augmentation layers (random flip, rotation ±5°) added inside the model.
+- Architecture: repeated **convolution blocks** — `Conv2D` (increasing filters 32→64→128→256, 3×3 kernels, ReLU) + `MaxPooling2D` (2×2) — then `Dropout`, `Flatten`/pooling, and a final `Dense(1, activation="sigmoid")`.
+- Compile with `Adam` optimizer, `binary_crossentropy` loss, accuracy metric; use **early stopping** to restore the best validation weights.
+- Result: ~0.8 test accuracy (wrong about 1 image in 5); train/validation accuracy curves (Figure 16-4) show learning progress across ~25 epochs.
+
+## Leveraging pre-trained solutions
+- Same task with **EfficientNetV2-B0** pre-trained on ImageNet as a frozen base: augmentation → pre-trained base → `GlobalAveragePooling2D` → `BatchNormalization` → `Dropout(0.2)` → `Dense(1, sigmoid)`.
+- Only 3,841 of 5,921,972 weights are trainable — the head trains in a **single epoch**.
+- Result: **~0.99 test accuracy**, versus 0.8 from scratch — demonstrating how pre-trained models revolutionize computer vision by supplying advanced feature extraction for free.
+
+## Key Takeaways
+- Augmentation is cheap regularization for image models.
+- CNN architectures (AlexNet → VGG → ResNet → EfficientNet) drove the deep learning renaissance on ImageNet.
+- Transfer learning with a frozen pre-trained base is the default for small datasets: faster, cheaper, dramatically more accurate.
+- Beyond classification: detection, localization, and segmentation use the same CNN building blocks.
+
+---
+
+# Chapter 17: Scoring Opinions and Sentiments
+
+## Overview
+Computers don't understand text as humans do — it's all numbers underneath — yet NLP lets them process and produce meaningful results. The chapter moves from bag-of-words fundamentals through TF-IDF and n-grams to RNN/LSTM sequence models and transformer architectures, ending with sentiment detection on movie reviews.
+
+## Introducing Natural Language Processing
+- NLP bridges human language and numerical representations; the field traces to Alan Turing's 1950 Turing Test.
+- Practical wins: spam filtering, part-of-speech tagging, **named entity recognition (NER)**, stock prediction from news, deduplication.
+- Hard problems: translation, pronoun reference ("John told Luca he shouldn't do that again"), **word-sense disambiguation** (mouse = animal or device). Understanding requires context — the core difficulty. Modern LLMs made these seem easy but brought new failure modes: **hallucinations** (plausible-sounding but incorrect output).
+
+## Revising the State of the Art in NLP
+- Evolution: rule-based expert systems → statistical methods (TF-IDF, hashing trick) → deep learning as the dominant paradigm.
+- **RNNs** (with LSTM/GRU) marked the first big leap over bag-of-words; then **word embeddings** (Word2Vec, fastText) represented words as dense semantic vectors trained on millions of texts.
+- **Transformers** ("Attention Is All You Need," Vaswani et al., 2017) revolutionized NLP: process words in parallel and weight the importance of every word via the **attention mechanism**, capturing distant relationships better than RNNs. Two families: **encoder models** (understanding — e.g., Google's BERT) and **decoder models** (generation — GPT series, Gemini, Claude, Llama, DeepSeek). These power today's LLM chatbots.
+- Classic NLP still matters when compute, data, or interpretability constraints rule out big models.
+
+## Understanding How Machines Read
+- **Bag of Words (BoW)**: one-hot-style binary features marking which vocabulary words appear in each text.
+- A *corpus* is the set of documents analyzed. scikit-learn's `CountVectorizer` fits a vocabulary and transforms texts into a document-term matrix (rows = documents, columns = unique words).
+- `vectorizer.vocabulary_` maps each word to its column index. Document matrices are memory-hungry, so **sparse matrices** store only nonzero values.
+
+## Processing and enhancing text
+- **Counting tokens**: switch from binary presence to occurrence counts (binary=False).
+- **TF-IDF** (Term Frequency-Inverse Document Frequency): weight terms by frequency in a document, down-weighted by how common they are across the corpus — distinctive words score high, ubiquitous ones score low; includes length normalization (`TfidfTransformer(norm='l1')` makes each document's weights sum to 1).
+- **N-grams**: contiguous token sequences (bigrams, trigrams) recover word order lost by BoW (`ngram_range=(2,2)`); rarely useful beyond trigrams.
+- **Stemming and stop words**: stemming reduces words to their root (cats/catty/catlike → cat) via NLTK's `PorterStemmer`; **stop words** (a, the, of…) carry little meaning and are removed. Both shrink the matrix and speed learning, at some risk of losing nuance.
+
+## Handling problems with raw text
+- **Character encoding** is the classic trap: always prefer **UTF-8** when reading/writing files in Python; specify encoding explicitly (pandas `read_csv(encoding=...)`, `to_csv` defaults to UTF-8). Python 3 strings are Unicode internally.
+
+## Resorting to neural network technology
+- BoW + regularized linear models (logistic/linear regression) work, but sequences defeat them.
+- **RNNs** process inputs in order, retaining memory of past elements — good for text but limited: data-hungry, vanishing gradients, poor long-range recall, one-direction reading.
+- Fixes: **LSTM** and **GRU** gated architectures remember/forget selectively; **bidirectional RNNs** (BiLSTM/BiGRU) read both directions.
+- **Attention/transformers** superseded them: self-attention focuses on the essential parts of the discourse regardless of position — the core of ChatGPT and Gemini.
+
+## Employing self-attention models
+- **Tokenization**: split text into tokens (words, sub-words, punctuation); advanced tokenizers handle emojis and many scripts, using **subword tokenization** for unknown words. Tokens map to integers, then **embedding layers** map integers to dense vectors where semantically similar words sit near each other (**semantic similarity**; roots in Benzécri's correspondence analysis).
+- Embedding history: Word2Vec, GloVe, fastText → **BERT** (bidirectional encoder, context-dependent embeddings, **multi-head attention** over whole sequences) and successors RoBERTa, DistilBERT, ALBERT, DeBERTa — the transformer family.
+- **GPT models**: decoder transformers trained on massive text to predict the next word; next-word prediction, iterated from a prompt until a stopping criterion, is the core mechanism of LLM chat and problem-solving.
+- Pre-trained models adapt to new tasks via **fine-tuning** on small labeled datasets.
+
+## Using Scoring and Classification — sentiment on movie reviews
+Task: binary sentiment on Stanford's **Large Movie Review Dataset** (IMDb, 50,000 reviews, perfectly balanced). Sentiment is hard: contronyms ("dust"), slang ("sick" = excellent), context-dependent phrasing. Dictionaries (AFINN-111, Hu-Liu opinion lexicon) score words, but ML on labeled examples works better.
+
+### From-scratch bidirectional LSTM (Keras 3, JAX backend)
+- Split 60/20/20 train/valid/test; `TextVectorization` layer lowercases, strips punctuation, builds a 10,000-word vocabulary, converts reviews to padded integer sequences (maxlen 256).
+- Model: `Embedding` (64-dim) → two `Bidirectional(LSTM(32))` layers → `Dropout(0.25)` → `Dense(1, sigmoid)`; Adam + binary cross-entropy; ~690k parameters.
+- Two epochs → **~0.84 accuracy** on validation and test.
+
+### Improving with a pre-trained model (ModernBERT)
+- **ModernBERT** (Answer.AI/LightOn et al., 2024): BERT's successor trained on 2 trillion tokens of text+code, faster and more memory-efficient.
+- Hugging Face `transformers`: `AutoTokenizer` + `Dataset.from_dict` tokenize the reviews; `AutoModelForSequenceClassification.from_pretrained(model_name, num_labels=2)` loads the model.
+- Fine-tune with `TrainingArguments`/`Trainer` (1 epoch, batch 8, lr 2e-5, weight decay 0.01).
+- Result: **~0.94 test accuracy** vs 0.84 from scratch — pre-trained models bring prior language knowledge, at the cost of size and inference time; trade accuracy against model size per use case.
+
+## Key Takeaways
+- BoW → TF-IDF → n-grams handle classic text ML; encoding (UTF-8) and stop words/stemming are the practical hygiene.
+- Transformers with self-attention replaced RNN/LSTM as NLP's state of the art; encoders (BERT) classify, decoders (GPT) generate.
+- Fine-tuning a pre-trained encoder is the highest-accuracy path for text classification with modest labeled data.
+
+---
+
+# Chapter 18: Recommending Products and Movies
+
+## Overview
+Recommender systems act as web-scale salespeople — suggesting products, movies, and content from what's known about your preferences. The chapter covers rating data, behaviors, collaborative filtering, and singular value decomposition (SVD), hands-on with the MovieLens dataset.
+
+## Realizing the Revolution of E-Commerce
+- Recommenders learn user preferences over time (supervised and unsupervised techniques); users get reduced complexity and less information overload, companies get personalized sales.
+- Effectiveness depends on product type: greater for **utilitarian** products (hammer) than hedonic ones (perfume), and for products judged by use rather than easily judged visually. User reviews complement recommendations.
+- History: Xerox PARC's **Tapestry** (1992, first recommender), the **GroupLens** project (collaborative filtering, MovieLens), Amazon mainstreaming it, and the **Netflix Prize** competition — won with an approach combining **SVD** and Restricted Boltzmann Machines. Social networks (YouTube, Instagram, TikTok, LinkedIn) and search engines are recommenders too.
+- Side effects: filter bubbles and concerns over independent decision-making.
+
+## Downloading Rating Data — the MovieLens dataset
+- MovieLens (grouplens.org) offers rating datasets from 100k to 21M+ ratings. The chapter uses **ml-1m**: 1 million ratings from ~6,000 users on ~4,000 movies.
+- Load `users.dat`, `ratings.dat`, `movies.dat` with pandas `read_table` and merge into one DataFrame on `user_id` / `movie_id`.
+- Exploration: ratings skew positive (3-5 stars — people watch what they expect to like); users average ~165.6 reviews each; per-movie counts vary hugely (e.g., Star Wars 1977: 2,991 raters, 4.45 average).
+
+## Encountering the limits of rating data
+- Ratings come from judgments (stars) or facts/behaviors (bought, watched, browsed). Behaviors matter as much as ratings.
+- Recommendation strategies:
+  - **Collaborative filtering** — match raters by similarity of movies/products rated in the past ("people like you liked…").
+  - **Content-based filtering** — match features of the item to user preferences.
+  - **Knowledge-based recommendations** — from metadata and product descriptions when no behavioral data exists (cold start, the hardest case).
+
+## Considering collaborative filtering
+- Similarity measures: Euclidean, Manhattan, Chebyshev distances, and **cosine similarity** — the angle between two vectors; +1 same direction, 0 orthogonal, −1 opposite. Widely used for user/item similarity.
+- **Massaging the data**: drop irrelevant columns; keep only ratings ≥ 3; remove rarely rated movies (keep titles with ≥1,000 ratings via `groupby().transform('size')`) — shrinking 1,000,209 rows to ~237k focused on frequently rated, well-received films.
+
+## Performing collaborative filtering
+- Build a **pivot table** (`pd.pivot_table`) — rows = users, columns = movie titles, values = ratings (a sparse matrix full of NaN).
+- Pick a target movie (Young Frankenstein, 1974) and correlate its ratings column with all others (`corrwith`): top matches are Blazing Saddles, Alien, Willy Wonka & the Chocolate Factory, M*A*S*H — sensible (three are Gene Wilder films) even with modest correlation values.
+
+## Leveraging SVD
+### Explaining the basics
+- **SVD** factorizes a matrix into constituent parts: **A = U × Σ × Vᵀ** (U: left-singular vectors; Σ: diagonal of singular values; Vᵀ: right-singular vectors). Every matrix has an SVD — more stable than eigendecomposition.
+- Uses: compression, denoising, data reduction, least-squares regression, image compression. NumPy/SciPy `linalg.svd` demonstrates decomposing and perfectly reconstructing a 3×3 matrix.
+- Data redundancy: features carry **unique variance**, **shared variance** (collinearity/multicollinearity), and **random noise**. SVD/PCA fuse redundant features into components, revealing **latent factors** — hidden features like taste dimensions.
+
+### Understanding the SVD connection
+- **Latent semantic indexing (LSI)** groups documents/words appearing in similar contexts (e.g., baseball teams grouped by co-occurrence, no prior knowledge needed).
+- In recommenders, SVD implements collaborative filtering robustly at the level of latent preferences ("you like action/adventure movies"), not just individual products.
+
+### Seeing SVD in action
+- scikit-learn `TruncatedSVD(n_components=15)` reduces the user × movie ratings pivot to 15 latent components (scalable — computes only what's needed).
+- Each movie gets a 15-value latent profile; correlate the target movie's profile (Star Wars: Episode V) against all movies (`np.corrcoef`) and pick titles with correlation ≥ 0.985 → Episode IV and Episode VI, exactly the expected recommendation.
+- SVD finds relations you didn't imagine in advance — an entirely data-driven approach.
+
+## Key Takeaways
+- Recommenders run on ratings + behaviors; collaborative filtering exploits similar users, content/knowledge-based methods handle cold starts.
+- Clean and prune rating data (positive skew, rare movies) before modeling.
+- SVD extracts latent taste factors, powering robust, scalable recommendations — the Netflix Prize legacy.
+
+---
+
+# Chapter 19: Ten Ways to Improve Your Machine Learning Models
+
+Training results are overly optimistic; judge improvements by k-fold cross-validation or a held-out test set.
+
+1. **Studying Learning Curves** — plot training vs. validation performance against growing training size. Wide gap (low in-sample error, high out-of-sample) = **high variance/overfitting** → more data helps. Curves close together but high error = **high bias/underfitting** → more data won't help; make the model more complex (interactions, polynomial expansion) or simplify if variance persists (feature selection, L1/L2 regularization, hyperparameter tuning).
+2. **Using Cross-Validation Correctly** — a gap between CV estimates and test performance usually means setup problems: **leakage** (validation/test information reaching training — preprocess train and test separately, never learn imputation/scaling/dimensionality reduction from pooled data), **snooping** (adaptive overfitting from testing on the test set too often), **incorrect sampling** (use stratified sampling for imbalanced classes).
+3. **Choosing the Right Error or Score Metric** — optimize the metric that matches the problem; take inspiration from academic papers and Kaggle contests with similar data; if the algorithm's loss function differs from your metric, tune hyperparameters targeting your metric via grid search.
+4. **Searching for the Best Hyperparameters** — defaults are okay, but random search (≥30 iterations) over hyperparameters consistently improves results; speed up long searches by sampling the data or using fewer CV folds (three often suffices).
+5. **Testing Multiple Models** — no-free-lunch: don't fall in love with one approach; favor simple solutions over complex when performance ties; compare models with gain/lift charts for business targeting; introspect models for feature-creation hints.
+6. **Applying Feature Engineering** — the cure for bias: new features that improve target response guessability (polynomial expansion, SVM kernel trick, domain knowledge — feature creation is more art than science, humans still beat machines).
+7. **Selecting Features** — the cure for variance with many features: keep only predictive ones via regularization (L1 zeroing), stability selection, forward selection, or recursive feature elimination (scikit-learn `feature_selection`, RFE).
+8. **Looking for More Data** — more cases or features: label new data, scrape the web, use open-data sources and APIs (Google geographical/business APIs); LLMs (ChatGPT, Gemini) can synthesize structured features from unstructured text/images (entities, sentiment, topic classes).
+9. **Blending Models** — average predictions of many different well-performing models: variance is random, so averaging enhances signal and cancels opposite errors; even simple models (linear) improve sophisticated ones (gradient boosting) when averaged.
+10. **Stacking Models** — two stages: multiple diverse models predict via cross-validation (avoiding leakage), then a second-stage model (logistic regression or a tree ensemble) learns from those predictions — best for complex target functions.
+
+---
+
+# Chapter 20: Ten Guidelines for Ethical Data Usage
+
+Internet content is not automatically public domain — training LLMs and diffusion models on scraped art/text has spawned lawsuits against Meta, OpenAI, Microsoft, and Anthropic. Assume content is copyrighted unless stated otherwise; fair use is tricky; EU AI Act, CCPA/CPRA, and new data-governance laws apply.
+
+1. **Complying with laws** — copyright, fair use, personal-information regulations.
+2. **Obtaining Permission** — sourcing personally identifiable information (PII) requires consent or a valid legal basis; LLMs memorize training data verbatim and PII can't easily be deleted from a trained model; CCPA/CPRA and GDPR mandate obfuscation/deletion on request.
+3. **Using Sanitization Techniques** — de-identification ≠ data cleaning. Methods: **remove the feature**, **replace it** (pseudonymization/anonymization with random unique IDs), **generalize/aggregate** (birth date → year or age range), **automated sanitization** (NER-based tools, Google Cloud DLP, AWS Macie — with human oversight since automation can be reverse-engineered or over-scrub).
+4. **Avoiding Inference Pitfalls** — don't infer sensitive attributes (gender from names/photos, age from faces): inference imposes inaccurate binary classifications, fails for diverse identities, and imports bias. If a sensitive attribute is missing, design analyses that don't depend on it.
+5. **Using Generalizations Correctly** — statistics apply to groups, not individuals (**ecological fallacy**): loan refusals based on neighborhood defaults, predictive-policing feedback loops, recruitment AI generalizing past hires' demographics, image systems trained on one group failing others.
+6. **Shunning Discriminatory Practices** — skewed data collection produces biased, poorly generalizable results; high-stakes uses (bail, sentencing, parole, benefits) need humans in the loop and deliberate fairness design.
+7. **Detecting Black Swans in Code** — (Taleb) unpredictable high-impact events (COVID-19, GameStop surge, generative AI's emergence) break models trained on history. Build robust/antifragile systems: stress tests with extreme synthetic data, anomaly and out-of-distribution detection, drift monitoring with quick retraining, graceful degradation, humans overseeing sudden failures.
+8. **Understanding the Process** — GDPR and the EU AI Act require explaining impactful automated decisions; **Explainable AI (XAI)** techniques (LIME, SHAP, counterfactual explanations) reveal driving factors; high-stakes personal-data models can't be black boxes.
+9. **Considering the Consequences** — algorithms have no values, moral compass, or contextual understanding; humans must remain in the loop and bear legal/ethical responsibility for outputs.
+10. **Balancing Decision-Making & Verifying a Data Source** — business goals (speed, profit) may conflict with ethical assessment and fairness audits; safeguard against hard-to-reverse effects on people. Third-party datasets don't relieve ethical obligations: check provenance, readme restrictions, and get written permission unless clearly public domain.
+
+---
