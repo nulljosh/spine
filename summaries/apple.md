@@ -1,4 +1,4 @@
-# Apple: The First 50 Years (complete — pages 1-112 of this photographed batch, through end of Chapter 10)
+# Apple: The First 50 Years (pages 1-136 read so far, through start of Chapter 13)
 
 *This folder holds the first third of a 2026-published corporate history of Apple, by an unidentified author who interviewed ~150 people connected to the company. Chapters below are summarized from the pages photographed and read so far (roughly pages 1-47 of ~300+). The remaining pages in this folder are still unread — see the note at the end.*
 
@@ -122,7 +122,43 @@ Frames Apple's history via Myra Haggerty ("I've worked at five companies... they
 - **Perspectives on his temper**: Some (like Bill Fernandez) argue the harshness came from deep insecurity rooted in his upbringing rather than genuine cruelty; others (Susan Kare, Rod Holt, Wozniak, later Apple Store creator Ron Johnson, iPhone/iPad software lead Scott Forstall) say Jobs treated people he respected with real warmth ("a white hat," in Wozniak's words). Joanna Hoffman: "He was much harder on himself than anybody else." Steve Capps recalls Jobs sometimes adopting others' better ideas as his own days later without credit, then eventually admitting so ("Hey, did you see what I came up with?"). Jobs left Apple in 1985 (detailed in a later chapter) to found NeXT, then bought the computer-graphics division of Lucasfilm that became Pixar; colleagues describe him growing markedly better at working with people over that decade away, returning eventually as "Steve 2.0."
 - **Jobs and Journalists sidebar** (author's first-person aside, as former NYT tech columnist): recounts a heated 2007 phone call from Jobs personally objecting to a negative review of a simplified iMovie redesign, defending the decision as data-driven (most users weren't using advanced editing features) — an anecdote illustrating Jobs's habit of personally engaging critics rather than ignoring criticism.
 
-*(This folder's photographed pages end here, at page 112/113, right as Chapter 11 begins — the natural boundary of this first-third batch.)*
+## Chapters 11–13 (pp. 113–137): Software / Marketing the Mac / Insanely Great
 
-## Note on scope — COMPLETE
-All 113 images in this folder have been read and summarized (pages 1-112, Introduction through end of Chapter 10 "Sculley," covering Apple's founding through the eve of the Macintosh launch/Sculley's early tenure). Source HEICs can now be safely deleted.
+## Chapter 11: Software (continued)
+
+- Every six months, Jobs took the Mac team to a California resort for off-site meetings mixing rallies, parties, and Q&A. He posted "Quotations from Chairman Jobs" on the whiteboard, including "It's Not Done Until It Ships," "Don't Compromise!," "The Journey Is the Reward," "Mac in a Book by 1986," "It's Better to Miss Than Turn Out the Wrong Thing," and "Real Artists Ship."
+- The final quotation ("Real Artists Ship") became especially relevant as the Mac's ship date had already slipped twice; it was now set for the January 24, 1984 shareholders' meeting.
+- **Steve Capps**: recruited from the Lisa team in Sept. 1981. Jobs wanted engineers who were "young, tireless, idealistic, brilliant, and, preferably, artistic." Capps built **Capps' Alice**, one of the first Mac-native games (a maze/chess-piece game), to prove the machine's graphics could do more than spreadsheets.
+- **Susan Kare**: hired without a computer science background (art history/no formal training). Designed Mac icons and bitmap fonts named after Philadelphia train stops (Chicago, New York, Venice, Geneva, Toronto, etc.) since she'd studied in Philadelphia — became the origin of Mac's tradition of city-named system fonts.
+- **128K limitation**: The Mac originally shipped with 128 KB of RAM — already tight in 1984, and a growing bottleneck as more sophisticated software demanded more memory. Development of a memory upgrade was constrained by cost.
+- **"Mr. Macintosh"**: Jobs referred to the Mac as having a persona from the start; the "1984" Super Bowl ad framed the Macintosh as a liberating alternative to IBM/"Big Brother" computing.
+- **MacPaint**: Bill Atkinson's graphics program, bundled with every Mac starting January 1984 — became the primary demonstration of the Mac's mouse-driven, WYSIWYG graphics capability. Extremely influential on later paint/drawing software.
+- **MacWrite**: Apple's bundled word processor, paired with MacPaint as the killer-app duo that sold people on the concept of a GUI computer.
+- **Consistency**: Apple published Mac Human Interface Guidelines urging developers toward standardized menus, keyboard shortcuts, Cut/Copy/Paste, and predictable UI — a deliberate break from prior computing's inconsistent, developer-specific conventions.
+- **Manuals**: The Apple IIc's friendly documentation style was extended to the Mac; manuals aimed to be approachable enough for total beginners, reflecting Apple's "the whole concept of a computer" being reimagined for non-technical users.
+- **Saving Lives** (sidebar): recounts an anecdote about the Mac's clock/battery reliability mattering in unexpected ways (medical/emergency use), underscoring how far outside "computing" contexts the Mac reached.
+- **Jobs, Art, and Japan** (sidebar): Jobs's interest in Japanese aesthetics and simplicity influenced Mac design sensibility; comparisons drawn between Japanese woodblock art and Mac's visual minimalism.
+- **Cmd Key**: The command key symbol (⌘) was chosen by Susan Kare instead of the Apple logo (Jobs felt using the Apple logo on every menu item was overuse/vanity), pulled from a symbol-dictionary reference for "interesting place" used on Scandinavian maps.
+
+## Chapter 12: Marketing the Mac
+
+- **Mike Murray**: Apple's marketing lead for the Mac launch; previously at HP. Believed the Mac needed "software evangelism" — third-party developers had to be recruited and cultivated aggressively, not just sold hardware.
+- **Software Evangelism**: Murray hired **Mike Boich** as Apple's first "software evangelist," tasked with convincing external developers (Lotus, Microsoft, and others) to write Mac software before launch, offering early dev kits and support.
+- **The IBM Challenge**: The narrative frames Apple vs. IBM as the era's central computing battle — IBM PC dominance in business, Apple betting the Mac's ease-of-use and graphical interface would be the differentiator that broke IBM's grip.
+- **Influencers**: Apple courted trade press, user groups, and hobbyist networks (echoing the Apple II strategy) — free machines and demos went to reviewers and educators to build grassroots buzz ahead of launch.
+- **Guy Kawasaki**: joined as a software evangelist; became a key figure driving developer enthusiasm and Mac evangelism culture, later writing about the experience.
+- **Undergrads**: Apple deliberately marketed to college students and campuses, recognizing students/educators as an underserved, influential audience for a new computing paradigm.
+- **Publishing / Macworld**: *Macworld* magazine launched alongside the Mac in January 1984 as a dedicated publication — signaling how significant a launch this was expected to be.
+- **"1984" ad**: Directed by Ridley Scott, aired once nationally during Super Bowl XVIII (Jan 22, 1984). Depicted a dystopian Orwellian society shattered by a hammer-throwing runner, symbolizing the Mac breaking IBM/"Big Brother" computing conformity. Became one of the most celebrated commercials ever made, generating massive earned media well beyond its single paid airing.
+- **Reaction/controversy**: The ad's boldness (some board members reportedly wanted it pulled) and the subsequent flood of press coverage turned the launch into a cultural event, not just a product release.
+- **Test Drive a Macintosh**: A follow-up promotion letting potential buyers take a Mac home overnight to try it — an unusually generous, high-trust sales tactic meant to let the product sell itself via hands-on use.
+- **Time "Machine of the Year"**: The Mac's cultural impact contributed to major media recognition (Time's parallel "Machine of the Year" feature framing computers, including the Mac, as transformative for the year).
+- **$2,500 price point**: The Mac launched at $2,495 — a price Jobs and Murray debated fiercely, with Jobs wanting no advertising discount and confidence the machine would sell itself. Reception was strong; the Mac sold well in its earliest weeks.
+
+## Chapter 13: Insanely Great (start)
+
+- Opens with the January 24, 1984 shareholders' meeting/launch event at the Flint Center, where Jobs unveiled the Macintosh publicly for the first time, memorably having the machine "speak" via its built-in speech demo, drawing a standing ovation.
+- Frames the Mac's launch as the culmination of years of secretive, high-pressure development from the small original Mac team pictured together at Apple's campus.
+
+## Note on scope — IN PROGRESS
+Pages 1-112 (Introduction through end of Chapter 10 "Sculley") plus pages 113-137 (Chapters 11-13 start) have been read and summarized. Source HEICs for both batches deleted. Remaining pages of the book (rest of Ch.13 onward, Part 2-4: Interregnum/Steve 2.0/Tim eras) not yet photographed.
