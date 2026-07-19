@@ -62,5 +62,40 @@ Apple assembled a secret team pulling together the iPod Mini/Shuffle designers, 
 
 ---
 
-*(Still not photographed: pages 130–273, covering the rest of NeXT, Pixar's rise, and the 1997 Apple return/turnaround — a large gap between the previously-summarized material and this batch. Also still pending: the remainder of Chapter 12 onward through Chapter 17 — the iPhone launch, iPad, and Jobs's final years/legacy.)*
+# Chapter 13 — Stanford (pages 314–327)
+
+On June 16, 2005, Steve woke "more nervous than Laurene had almost ever seen him" to deliver the Stanford commencement address — a speech he labored over himself. Built around three personal stories:
+
+1. **"Connecting the dots."** His adoption (birth mother insisted on college-graduate adoptive parents), dropping out of Reed College, then "dropping in" on a calligraphy class with no practical use that ten years later shaped the first Mac's typography. "You can't connect the dots looking forward; you can only connect them looking backward." Anchored by the Whole Earth Catalog's farewell line, "Stay Hungry. Stay Foolish."
+2. **Love and loss.** Getting fired from Apple at thirty as a disguised gift — "the heaviness of being successful was replaced by the lightness of being a beginner again," freeing his most creative period (NeXT, Pixar, meeting Laurene).
+3. **Death.** His 2003 cancer diagnosis (told that morning it was almost certainly fatal, then reprieved by the rare curable islet-cell form). "Remembering that I'll be dead soon is the most important tool I've ever encountered to help me make the big choices in life."
+
+The speech became one of the most admired commencement addresses ever, giving the public a rare articulate window into who Steve was; Jim Collins called it the summation of his character.
+
+# Chapter 14 — A Safe Haven for Pixar (pages 329–346)
+
+March 12, 2005: Bob Iger, then Disney president, phoned Steve to propose a new Disney–Pixar marriage. The prior Michael Eisner regime had turned acrimonious — Eisner disparaged Pixar, the distribution-deal renewal collapsed, and Steve publicly walked away in 2004. Roy Disney's "Save Disney" revolt pushed Eisner out; Iger became CEO in 2005 and disarmed Steve by candidly admitting "Disney's animation group was in trouble" and needed Pixar. Rather than renew distribution, Disney **acquired Pixar outright** in an all-stock deal (~**$7.4 billion**, closing 2006), with Iger negotiating protections to preserve Pixar's Emeryville culture and put Lasseter and Catmull in charge of all Disney+Pixar animation. The deal made Steve **Disney's single largest individual shareholder** and a board member. Before the announcement, Steve confided his (still-secret) cancer recurrence to Iger; both felt he could be trusted. "I love that guy," Steve told Laurene.
+
+# Chapter 15 — The Whole Widget (pages 348–365)
+
+Frames the four most productive years of Steve's life, following his fall-2004 surgery. Organized around Steve's core conviction — Apple should control the *entire* integrated product, hardware and software together ("the whole widget"), rather than license to other makers.
+
+**The iPhone / AT&T deal.** Lacking cellular expertise, Apple partnered with a carrier. Steve wrung an unprecedented concession from **AT&T (Cingular)**: Apple would design and control the whole phone (no carrier crapware), with AT&T getting exclusivity plus a revenue cut in exchange for not meddling. Verizon had turned Apple down over that control. The **iPhone was announced January 9, 2007 at Macworld** and **shipped June 29, 2007** (~1.5M units first quarter). Established phone makers and VCs were skeptical of a keyboard-less phone; within months it was clear Steve had "reinvented the phone," vindicating the whole-widget strategy. (Nokia, BlackBerry, and later Android would scramble to catch up.)
+
+# Chapter 16 — Blind Spots, Grudges, and Sharp Elbows (pages 367–385)
+
+The book's candid counterweight — Steve's flaws even in maturity.
+- **Google/Android:** feeling betrayed (Eric Schmidt had been on Apple's board), Steve vowed to "go thermonuclear war" on Android as a "stolen product," driving sweeping patent litigation (HTC, Samsung) from 2010; the grudge clouded his judgment.
+- **Adobe/Flash:** refused Flash on iOS for genuine technical/security/battery reasons, colored by an old grievance; published "Thoughts on Flash" (2010).
+- **SEC options-backdating (2007):** Apple and Pixar had backdated options; Steve was cleared but two executives charged — his disregard for conventional rules on display.
+- **Fadell friction** and playing executives against each other, though he'd learned to keep his best people (Ive, Cook, Cue).
+- **Tim Cook's liver offer:** sharing a rare blood type, Cook offered Steve part of his own liver; Steve furiously refused — "I'll never let you do that."
+
+# Chapter 17 — "Just Tell Them I'm Being an Asshole" (pages 387–412)
+
+Opens December 2008 with Steve describing his failing health with dark candor. He received a **liver transplant on March 21, 2009 in Memphis** (shorter waiting list), aided through the ordeal by Bill Campbell and Larry Ellison. The title is Steve's blunt instruction for brushing off people to protect his dwindling energy. He returned to launch the **iPad on January 27, 2010** (Yerba Buena Center) — a tablet idea that predated the iPhone; skeptics dismissed it, but it became one of Apple's fastest-adopted products. Steve deliberately groomed **Tim Cook** as successor, telling him (August 2011) to run Apple as he saw fit and never ask "what would Steve do." Jim Collins supplies the book's thesis: Steve's ultimate creation was **an enduring company and culture**, not just products — the measure of how much he'd grown. Steve resigned as CEO in August 2011 and **died October 5, 2011** at home in Palo Alto. Memorials followed at **Stanford's Memorial Church (Oct 16)** and an **Apple campus service (Oct 21)** with Al Gore, Jony Ive, Tim Cook, Bill Campbell, Norah Jones, and **Coldplay**, whose Chris Martin closed: "We know Steve would want you to get back to work." The book ends on Bill Campbell's eulogy — "You're it. You're the people who made this happen" — framing Steve's life as "a victory for beauty, for purity, and… for giving a damn."
+
+---
+
+*Batch coverage now: Authors' Note/Prologue, Ch 1–4 (partial), and Ch 11–17. Still not photographed: pages ~130–273 (rest of NeXT, Pixar's rise, and the 1997 Apple return/turnaround) and the gap between Ch 4 and Ch 11.*
 

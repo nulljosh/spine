@@ -94,13 +94,52 @@ Skip the generic thank-you note in favor of an **influencing letter**: reiterate
 ### #19 — Trying Quick Ways to Find Good Jobs
 **Call-email-call**: leave a voicemail, immediately follow with an email, then call again a few days later — works even for cold outreach to employers not actively advertising. Aim broadly (10-20 target employers); rejection is expected and fine. **Phone a friend**: your network is more persuasive by voice than by text/email — call (don't just message) a dozen or so contacts who could plausibly know of an opening.
 
-### #20 — Looking [Elsewhere for Job Sources] / Blast Your Social Media
-Push your job search out through LinkedIn and other social networks — connect with organizations and individuals in your target field, engage authentically (comments, thoughtful posts) rather than cold-pitching immediately, then ask for referrals once you've built some visibility.
+### #20 — Looking into Federal Jobs / Blast Your Social Media
+Unless you're a born entrepreneur, consider government work: as companies and nonprofits convert ever more full-time jobs into freelance gigs, government is a major source of stable, benefited, full-time careers (paid holidays and vacations, typically a 40-hour week). The number-one way to spot federal openings is the official **USAJOBS.gov** site — search by keyword and location (or remote). Also push your search through LinkedIn and other social networks: connect with organizations and people in your target field, engage authentically, then ask for referrals once you've built visibility.
+
+### #21 — Checking Out Best Career-Changing Tips
+If your existing skills have grown obsolete or your field is shrinking, retraining into a growing occupation may be worth the time and money.
+- **Change by retraining** — community colleges and certificate programs offer lower-cost, faster paths than a full degree; some employers subsidize it.
+- **Use your network** — especially for people who lack the time/money for long retraining: an insider referral into a growing field can substitute for formal credentials.
+- **Work up from the bottom** — take an entry-level job in the new field and learn on the job; don't let ego stop you if the long-term trajectory is good.
+
+### #22 — Figuring Out Whether You Should Change Your Career
+A career tweak isn't always the answer — sometimes unhappiness stems from the job or boss, not the career. A true/false self-assessment to gauge your unhappiness's real source (e.g., "You're confident that any wrong you see in your workplace is due to the specific job, not the whole field," "You know that changing careers is expensive and risky," "You've researched what the new career actually pays and demands"). Diagnose before you leap.
+
+### #23 — Telecommuting as an Alternative to Traditional Work
+Technology and communications software make remote arrangements viable for many jobs; studies show telecommuters are often *more* productive than in-office peers, and it can cut commute time, office costs, and stress. **Downsides:** monitoring performance is harder, scheduling coordination suffers, some equipment/security needs shift to the employee, and managers must be more organized. Depending on the role, employees can telecommute full-time, part-time, or occasionally.
+
+### #24 — Persuading Your Organization to Let You Work from Home
+Frame the request around **the company's goals**, not your convenience: show how remote work helps the org reach its specific objectives, do a cost/benefit analysis comparing what you save the company vs. any cost, and demonstrate that telecommuting will spend more of your time on actual work. "Coach yourself" — anticipate and pre-empt management's objections (visibility, collaboration, discipline).
+
+### #25 — Considering Self-Employment
+Being your own boss is an attractive option if it suits you. Ask honestly whether you have the attributes:
+- **A self-starter** who doesn't need external motivation.
+- **Ethical** — your reputation *is* your business.
+- **Able to handle diverse problems** on the fly, since you wear every hat.
+Self-employment income comes irregularly; make sure you (and your family) can weather lean stretches, and know that many ventures take a couple of years to become profitable.
+
+### #26 — Getting Acquainted with Home-Based Business
+A home-based business offers flexibility and low overhead, but carries real risks:
+- **You're the boss** — self-discipline and drive are everything when no one's watching.
+- **Health insurance may be unaffordable or unavailable** as a small business owner — a critical consideration.
+- **You may fail** — most small businesses do; if you take on personal debt or guarantees, business failure can mean personal bankruptcy. Go in with open eyes.
+
+### #27 — Setting Up Your Home-Based Business
+Do the groundwork before you launch:
+- **Develop a business plan** — clarify goals, honestly assess whether it can be profitable, and map who your customers are.
+- **Consult outside professionals** — a lawyer, an accountant, and a banker can spot problems early.
+- **Choose a legal structure** — sole proprietorship (simplest/cheapest but no liability protection), partnership, or corporation/LLC (limits personal liability, more paperwork).
+- **Decide on a name** — pick something enduring; register it and protect the logo; check availability.
+- **Take care of the red tape** — local/state/federal licenses, permits, and registrations vary by business type.
+- **Get the insurance you need** — health, liability, property, workers' comp, business-interruption, etc.
+- **Decide on an accounting system** — single- vs. double-entry, cash vs. accrual; use software (QuickBooks-type) to stay organized.
+- **Develop a marketing plan** — know your target customers and how to reach them; treat it as a living document.
 
 ---
 
 ## TL;DR
 
-When money's tight: figure out your real net worth and true spendable income first, separate required expenses from discretionary ones so you know exactly where the fat is, track spending for real (not from memory), and turn vague financial worries into a concrete budget and action plan. Manage the stress side deliberately — breathing, progressive relaxation, staying organized, and leaning on your support system all measurably help. If income needs to go up, treat your resume as a living "core" document you customize per job, use keywords and results (not vague duty statements) to stand out, over-prepare for interviews without sounding scripted, follow up with an influencing letter instead of a generic thank-you, and use call-email-call plus your network (phone, not just text) to surface opportunities faster than job boards alone.
+When money's tight: figure out your real net worth and true spendable income first, separate required expenses from discretionary ones so you know exactly where the fat is, track spending for real (not from memory), and turn vague financial worries into a concrete budget and action plan. Manage the stress side deliberately — breathing, progressive relaxation, staying organized, and leaning on your support system all measurably help. If income needs to go up, treat your resume as a living "core" document you customize per job, use keywords and results (not vague duty statements) to stand out, over-prepare for interviews without sounding scripted, follow up with an influencing letter instead of a generic thank-you, and use call-email-call plus your network (phone, not just text) to surface opportunities faster than job boards alone. Beyond the current job: consider stable federal work (USAJOBS.gov), retraining into growing fields, or telecommuting — and if you go independent, honestly vet whether you're self-starter material, then set up a home-based business properly (business plan, pros, legal structure, licenses, insurance, accounting, marketing) with eyes open to the health-insurance and bankruptcy risks.
 
-*(To be continued: Part 2 tips #21+, Parts 3-7 — not yet photographed.)*
+*(Covered: Part 1 and Part 2 tips #1–27. Parts 3–7 not yet photographed.)*
