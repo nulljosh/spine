@@ -162,3 +162,95 @@ Frames Apple's history via Myra Haggerty ("I've worked at five companies... they
 
 ## Note on scope — IN PROGRESS
 Pages 1-112 (Introduction through end of Chapter 10 "Sculley") plus pages 113-137 (Chapters 11-13 start) have been read and summarized. Source HEICs for both batches deleted. Remaining pages of the book (rest of Ch.13 onward, Part 2-4: Interregnum/Steve 2.0/Tim eras) not yet photographed.
+
+---
+
+# Chapter 13: Insanely Great
+
+The Mac launch era, 1983–1985.
+
+## Final sprint
+The team that created the Mac was tiny by modern standards: 15 engineers plus a few dozen in manufacturing, finance, and support. Jobs threw a lavish black-tie holiday party at the St. Francis Hotel (music by San Francisco Symphony members) in 1983, then it was back to work. The unveiling was set for the annual shareholders' meeting, January 24, 1984 — but the real deadline was Monday, January 16 at 6 a.m., when the factory would start duplicating software disks. The software team pulled all-nighters through the final weekend, fueled by espresso and desperation, and shipped a build they weren't sure would boot reliably — it did.
+
+Photo: full-page team portrait of the Mac group (Bill Bull, Colette Askeland, Jerry Manock, Andy Hertzfeld, Burrell Smith, Joanna Hoffman, Debi Coleman, Chris Espinosa, and others) posed around an original Macintosh.
+
+## The launch
+- The "1984" Super Bowl ad (directed by Ridley Scott) nearly didn't run — the board hated it — but it aired once and became the most famous commercial ever made.
+- At the January 24 Flint Center unveiling, Jobs pulled the Mac from its bag, and the machine introduced itself in synthesized speech while MACINTOSH scrolled across the screen ("hello" in script on the display). The audience erupted; the demo, backed by a slideshow synced to Vangelis' Chariots of Fire, was pure theater.
+- Sculley's keynote framed the Mac as the last chance to stop IBM from dominating the whole industry ("It is now 1984… will Big Blue dominate the entire computer industry? The entire information age? Was George Orwell right?").
+
+Photo: the first Mac with "hello" on screen, captioned as expensive, underpowered, and revolutionary.
+
+## System 1.0
+The Mac's GUI let users guess features that were then genuinely novel: draggable icons, pull-down menus, the Trash, windows, desk accessories. Limitations were real — 128K of RAM, single floppy drive, no hard disk, endless disk-swapping, and copying a disk could take many minutes of shuffling.
+
+## Aftermath and slump
+Initial reviews were strong and early sales were hot — Apple shipped tens of thousands of Macs a month through mid-1984 and projected a 500,000-unit year. Then the slump: the Mac was underpowered for real work, had almost no software beyond MacWrite/MacPaint, and sales collapsed in late 1984 into 1985. Inventory piled up while Apple had bet the factory on huge volumes.
+
+## Apple Fellows
+Apple created the Fellow program to keep senior talent (Steve Wozniak, Bill Atkinson, Burrell Smith-era stars, later Alan Kay) with prestige titles and freedom. Woz, increasingly detached after his plane crash and the Apple II team's second-class treatment, drifted away.
+
+## Snow White, Red Book
+Apple's industrial design was inconsistent across divisions, so the company ran a design-language competition among world-class designers. Hartmut Esslinger (frogdesign, Germany) won with the "Snow White" language — zero-draft slopes, precise vertical/horizontal lines, small radii, recessed lines suggesting precision — codified in the Red Book. Esslinger moved to California; Snow White defined Apple's look from 1984 into the early '90s.
+
+Photos: Esslinger's Snow White concept models and a portrait of Esslinger with a 1985 Luxo-style talk.
+
+## Apple IIc and the first flat screen
+On April 24, 1984, Apple threw the Apple IIc launch event ("Apple II Forever") at San Francisco's Moscone Center — partly to reassure Apple II fans jealous of the Mac hype. The IIc was a sleek, portable, Snow White–styled machine with a carry handle. Apple also shipped its first flat-panel display, the ~$600 Apple Flat Panel Display for the IIc — an LCD so dim and low-contrast it flopped and was quickly discontinued.
+
+Photos: the Apple IIc with ImageWriter II, and the Flat Panel Display mounted on a IIc.
+
+# Chapter 14: Macintosh Office
+
+Apple's 1985 push to sell the Mac into business.
+
+## The pieces
+By the end of 1984, most personal computers sold went into offices — IBM territory. Apple's answer was the "Macintosh Office": Macs networked together, sharing a file server and a revolutionary printer.
+
+- **LaserWriter**: Apple licensed Adobe's PostScript, put a Motorola 68000 and more memory in the printer than in the Mac itself, and built a 300-dpi laser printer around a Canon engine. At ~$7,000 it seemed insane, but shared across an AppleTalk network it was cheaper per user than typewriters — and it output near-typeset-quality text and graphics. Jobs pushed the deal with Adobe (Apple bought a stake) over internal resistance. The LaserWriter ignited desktop publishing.
+- **Fonts**: PostScript described characters as mathematical outlines rather than bitmaps, so type scaled cleanly to any size — a leap over dot-matrix and daisy-wheel output.
+- **AppleTalk**: cheap built-in networking over ordinary cables, letting a small office share the LaserWriter without a mainframe-style network installation.
+- The promised **file server** was the missing piece — it slipped years.
+
+Photos: the original LaserWriter, and an S rendered as a bitmap vs. a smooth PostScript outline.
+
+## Lemmings
+To sell the Office, Apple ran the "Lemmings" ad at the January 1985 Super Bowl — blindfolded businesspeople marching off a cliff. Where "1984" inspired, Lemmings insulted the very customers Apple was courting. It bombed, and it marked the moment the marketing magic stalled.
+
+Photo: still from the Lemmings ad — a line of blindfolded executives on a cliff edge.
+
+## What happened to the Lisa
+The Lisa was rebranded "Macintosh XL" and killed in April 1985. Thousands of unsold Lisas were eventually buried in a guarded landfill in Logan, Utah in 1989 — Apple took the tax write-off. (Sidebar: a Lisa recovered from that era later sold for enormous sums as a collector's item.)
+
+## Celebration and ghosts
+In February 1985 Jobs celebrated his 30th birthday with a black-tie gala (Ella Fitzgerald sang). Sidebar on "ghosts of the missing Macs": canceled or phantom products of the era, including the BigMac/Baby Mac projects and other 68000-era designs that never shipped.
+
+# Chapter 15: Rift
+
+The 1985 power struggle: Jobs vs. Sculley.
+
+## The slide
+The Macintosh Office launch flopped, Mac sales kept falling, and Apple hit its first losing quarter. Jobs, running the Mac division, was blamed for chaos: missed schedules, morale problems, and open contempt for the Apple II division that was still paying the bills.
+
+## Power shift
+Sculley, pressed by the board, reorganized in spring 1985 to take the Mac division away from Jobs. Jobs lobbied executives one by one to side with him and even planned to move against Sculley while Sculley was traveling in China — the "boardroom coup." Word leaked; Sculley canceled his trip.
+
+Photos: Apple Labs sidebar with Steve Kitchen; group photo of Murray, Coleman, Belleville, and Barnes.
+
+## E-Staff meeting and reorg
+At the executive staff meeting of May 24, 1985, Sculley confronted Jobs directly: "I'm asking you to step down." Jobs shot back that Sculley was bad for Apple and unfit to run it. One by one the executives — including Jobs' own allies — sided with Sculley. In the following days Jobs made a last attempt to flip board members and lost. The reorganization stripped Jobs of all operating duties, leaving him a figurehead chairman with an office he called "Siberia." Roughly 1,200 employees were laid off in "Black Wednesday"; the company consolidated around Sculley, Gassée took the Mac division, and Del Yocam ran operations.
+
+## Summer of '85
+Jobs spent aimless weeks at home with girlfriend Tina Redse, visiting Europe and the Soviet Union, and mulling everything from politics to running for office. A dinner conversation with a Stanford biochemist about DNA sequencing gave him the idea for a powerful workstation for higher education — the seed of NeXT.
+
+## Exit
+In September 1985 Jobs told the board he was leaving to found NeXT and taking five key Apple employees with him. The board, feeling ambushed (they had discussed investing in his new venture days earlier), turned hostile when the list of hires arrived; Apple sued. Jobs sold all his Apple stock — 11 percent of the company, worth over $100 million — except one share, kept so he'd still get the annual report and could attend shareholder meetings. "It's hard to think that a $2 billion company with 4,300 employees couldn't compete with six people in blue jeans." He never spoke to John Sculley again.
+
+**Sidebar — Apple vs. Jobs**: after four months the lawsuit settled (January 1986). Apple got inspection rights over NeXT prototypes, Jobs promised NeXT machines would be more powerful than anything Apple made (so wouldn't compete in Apple's home/student market), and he agreed not to hire more Apple people for six months — essentially the restrictions Jobs had offered the board in the first place.
+
+## Key takeaways
+- The Mac launch was a marketing triumph followed almost immediately by a sales collapse: revolutionary interface, underpowered hardware, no software.
+- The LaserWriter + PostScript + AppleTalk combination — not the Mac alone — created desktop publishing and saved the platform.
+- Esslinger's Snow White design language gave Apple its first unified product identity.
+- The Jobs–Sculley rift was as much about Jobs' management chaos and the Mac division's losses as personality; the board sided with operations over vision.
+- Jobs left with almost nothing but one share of stock and the idea for NeXT — the setup for his 1997 return.
