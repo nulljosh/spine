@@ -97,5 +97,11 @@ Opens December 2008 with Steve describing his failing health with dark candor. H
 
 ---
 
-*Batch coverage now: Authors' Note/Prologue, Ch 1–4 (partial), and Ch 11–17. Still not photographed: pages ~130–273 (rest of NeXT, Pixar's rise, and the 1997 Apple return/turnaround) and the gap between Ch 4 and Ch 11.*
+## Closing Notes (Source Notes, Bibliography, Acknowledgments)
+
+This final photographed section is pure backmatter, not narrative chapter content: per-chapter Source Notes (citations for Chapters 1 through 17), a Bibliography of books referenced (Amelio, Berlin, Brennan, Catmull, Collins, Deutschmann, Esslinger, Grove, Hertzfeld, Hiltzik, Isaacson, Kahney, and others), a list of articles/websites/other sources cited, and the authors' Acknowledgments (thanking agent Kris Dahl, editor Roger Scholl, collaborator John Huey, and dozens of named friends/colleagues plus unnamed people close to Steve Jobs who spoke on background). No new narrative content — the book's story ends with Chapter 17 above.
+
+---
+
+*Batch coverage now: Authors' Note/Prologue, Ch 1–4 (partial), Ch 11–17, and closing backmatter (source notes/bibliography/acknowledgments). Still not photographed: pages ~130–273 (rest of NeXT, Pixar's rise, and the 1997 Apple return/turnaround) and the gap between Ch 4 and Ch 11 — the narrative arc has a gap there, though the book's ending is now fully covered.*
 
